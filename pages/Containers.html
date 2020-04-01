@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<!-- makes it usable across browsers -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What are Containers? | DevOps Platform</title>
+	<link rel="shortcut icon" href="../img/DP-favicon.png">
+	<link rel="stylesheet" href="../bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2pages.css">
+	<link rel="stylesheet" href="../css/fixed.css">
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<!-- this makes the sections responseive in the title -->
+	<!-- if you didnt want to use scroll spy you could just use the active class -->
+
+<!-- Start Home Section -->
+<div id="home">
+	<!-- Navigation	 -->
+	<nav class="navbar navbar-expand-md bg-purple fixed-top">
+		<!-- navbar-expand-md makes it expand when the screen goes past a certain size -->
+		<a class="navbar-brand" href="../index.html"><img src="../img/DPW6bold.png"></a>
+			<!-- navbar-brand is classic way to add a logo -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#navbarResponsive">
+			<!-- this creates the button when collapsed. It will show all navbarResponsive -->
+			<span class="navbar-toggler-icon"></span>
+				<!-- this creates the hamburger sign -->
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="pages navbar-nav ml-auto">
+			<!-- ml to push to right, centre md-auto, left mx-auto -->		
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>	
+			</ul>													
+		</div>
+	</nav>	
+	<!--- End Navigation -->
+</div>	
+<!--- End Home Section -->
+
+<!-- Start pages-wrapper Section -->
+<div class="pages-wrapper">
+	<!-- makes the background color -->
+
+	<!-- Start pages-narrow Section -->
+	<div class="pages-narrow">
+		<!-- makes it 75% of the page -->
+			<div id="pages-textbox">
+				<p class="pages-alignleft">
+					<a href="../index.html">Home</a>
+					>
+					<a href="../blog.html">Blog</a>
+				</p>
+				<p class="pages-alignright">01 April 2020</p>
+			</div>
+
+
+			<!-- *****BODY SECTION***** -->
+		<div class="pages-main">
+			<!-- Start Features Section -->
+			<div id="features" class="offset"> 
+					<!-- offset provides an additional gap so the header does not overlap with the section -->
+				<div class="text-center">
+					<div class="col-12">	
+						<h3 class="pages-heading">Containers</h3>
+						<div class="pages-heading-underline"></div>
+					</div>
+					<br>
+				</div> <!-- end text center -->
+			</div> <!-- End Features Section -->
+
+			<!-- *****IMAGE SECTION***** -->
+			<div class="pages-narrow-image-header">
+					<!-- makes the image smaller than the narrow already -->
+				<img src="../img/containers.jpg">
+					<!-- Change image here  -->
+			</div>
+
+
+			<div id="features" class="offset"> 
+					<!-- offset provides an additional gap so the header does not overlap with the section -->
+				<!-- <div class="text-center"> -->
+				<div class="pages-content-one">
+					<p>
+						Containers are a method of creating and running software applications so they are more lightweight and portable than traditional approaches. Containers bundle an application into a singular package which contains all its: dependencies, libraries, binaries, and configuration files, whilst also sharing the Operating System (OS) of the underlying infrastructure. Containerised applications are typically easier to manage, quick to start up, and have lower operational costs.
+					</p>
+					<p>
+						To provide a <i>Platform of Understanding</i> on Containers this blog will begin with a brief comparison of Containers and Virtual Machines (VM's), before providing an overview on Physical Infrastructure and VM's to highlight the demand for Containers. Lastly the blog will explain Containers, their benefits and disadvantages, and what they mean for organisations going forwards.
+					</p>
+				</div>
+
+				<div class="pages-content-one">					
+					<h3><strong>VM & Container Diagram</strong></h3>
+					<p>
+						To understand what a Container is and how it works the below diagram which compares Containers and Virtual Machines can be a good place to start. This type of diagram is on most Container related blogs as it highlights how both are very similar but with a few key differences which significantly alter why and when they are used. 
+					</p>
+
+					<div class="pages-narrow-image-content">
+							<!-- makes the image smaller than the narrow already -->
+						<img src="../img/containers-and-vms-diagram-stripes.jpg">
+					</div>	
+
+					<p>
+						A brief summary on each of the elements in the diagram:
+						<ul>
+							<li>
+								Infrastructure - The server/laptop/computer everything is running on
+							</li>
+							<li>
+								Host Operating System - The OS which exists on the Infrastructure (e.g. Windows/Linux).
+							</li>
+							<li>
+								Hypervisor - Software that is necessary for VM's to work
+							</li>
+							<li>
+								Container Daemon - Software that is necessary for Containers to work
+							</li>
+							<li>
+								Guest OS - OS of the Virtual Machine (notice how Containers don't have this)
+							</li>
+							<li>
+								Bins/Libs - Necessary Binaries & Libraries (code & files) for the application to work
+							</li>
+							<li>
+								App - Application 
+							</li>
+						</ul>
+					</p>
+
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Side note: OS Kernel</strong></h4>
+							<p>	
+								An OS's kernel can be mentioned in other blogs, however it is not really necessary to know about it to understand Containers.
+								However, if you're interested, a kernel is essentially the core part of an OS, all requests and actions pass through it.
+							</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="pages-content-one">	
+					<h3><strong>Physical Infrastructure</strong></h3>
+					<p>
+						Before VM's when a company created an application they would need to run it on infrastructure, such as server, that had sufficient capacity to meet  the applications current and predicted future demand. As there would be no way to segregate the libraries and dependencies of the application from any other applications on the same infrastructure the company would either need to buy new infrastructure for each application or place similar applications together on the same infrastructure. 
+					</p>
+					<p>
+						If a new server was purchased for each individual application it would end up costing the company a huge amount of money and if the application did not require all the servers capacity (they rarely did) then the company would have extremely inefficient and costly IT infrastructure.
+					</p>
+					<div class="pages-narrow-gif">
+						<!-- makes the image smaller than the narrow already -->
+						<img src="../gif/money-fire.gif">
+					</div>
+					<p>
+						If the company placed similar applications on the same server it would help overcome the wasted capacity issue, however as there is no way to segregate each applications libraries and dependencies the applications would often end up entwined over time which can result in the applications acting unpredictably. Additionally, it would be almost impossible to separate these applications without a huge amount of time, effort, and cost, to ensure there is no detrimental impact to the other applications on the shared infrastructure.
+					</p>
+				</div>
+
+				<div class="pages-content-one">	
+					<h3><strong>Virtualisation</strong></h3>
+					<p>
+						The concept of VMs arrived in the 1960's and offered a unique approach to overcoming the limitations of physical hardware.
+					</p>
+
+					<div class="pages-narrow-image-content">
+							<!-- makes the image smaller than the narrow already -->
+						<img style="max-width:65%;" src="../img/vm-diagram-stripes.jpg">
+					</div>	
+
+					<p>
+						VMs enable multiple virtual servers with different OS's to run on a single physical server. VMs contain their own OS and all the binaries, libraries and dependencies of the applications running on them, providing a form of isolation for different applications on the physical infrastructure.
+					</p>
+					<p>
+						By being able to run more applications on infrastructure without OS limitations or applications becoming entwined it is possible to achieve significant savings in capital, operational, and energy costs.
+					</p>
+						
+
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Example: Mac vs Windows - Why choose?</strong></h4>
+							<p>	
+								Lets say you own a MacBook but want to use an application that only works on Windows 10. Once you've installed the necessary software to act as the Hypervisor on your MacBook you could create a VM with Windows 10 OS and run the Windows 10 specific applications on it. Additionally, if you were feeling nostalgic and wanted to use an application that only ran on Windows Vista you could create an additional VM on your MacBook with the Windows Vista OS and run the application on that VM. All that could be achieved on your MacBook, as long as it had enough space, and the Windows 10 and Windows 7 applications would be isolated from one another.
+							</p>
+						</div>
+					</div>
+
+					<p>
+						However, the key benefit of a VM, containing a full copy of its own OS, is also its main disadvantage. OS's require a lot of capacity and result in VM's typically taking up tens of GB's. When you have multiple VM's with the same OS it results in a significant amount of the infrastructures capacity being used unnecessary. Additionally, their size makes them slow to boot up, so applications within a VM can take several minutes to become available, which can be significant and costly.
+					</p>
+					<div class="pages-narrow-gif">
+						<!-- makes the image smaller than the narrow already -->
+						<img src="../gif/must-go-faster.gif">
+					</div>
+				</div>
+
+				<div class="pages-content-one">	
+					<h3><strong>Containers</strong></h3>
+					<p>
+						Containerisation is not a new approach to creating and running applications, it can be even be traced back to the 1970's. However, the use of Containers has seen a massive increase in popularity since the emergence of new technologies and platforms (such as Docker) in 2013, which have dramatically increased the utility and capability of Containers. 
+					</p>
+
+					<div class="pages-narrow-image-content">
+							<!-- makes the image smaller than the narrow already -->
+						<img style="max-width:65%;" src="../img/container-diagram-stripes.jpg">
+					</div>	
+
+					<p>
+						A Container should only include a single application with all its necessary dependencies, libraries, binaries and configuration files. Containers isolate software from the infrastructure and other applications/Containers on the same infrastructure, making them more portable and easier to run on different infrastructure.
+					</p>
+						
+					<p>
+						Containers enable the isolation of applications from one another even if they run on the same infrastructure (be it Virtual or Physical). Unlike VMs Containers do not include an OS so they are significantly smaller in size. Containers are typically tens of MB's instead of VM's which typically are tens of GB's. Consequentially, this enables Containers to be started up almost instantly, whereas VM's can take several minutes. This makes Containers a useful approach for increasing the management and scalability of applications which are developed in a Microservices approach (find out more on <a href="Microservices.html" target="_blank">Microservices here</a>).
+					</p>
+
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Example: Why Containerise when you can Virtualise?</strong></h4>
+							<p>	
+								An organisation is developing multiple applications that all run on the same OS. They are not confident they can predict the capacity requirements of each applications future capacity requirements so want the applications to be easily portable between infrastructure. 
+							</p>
+							<p>
+								If they decide to place all the applications on the same infrastructure there is a high likelihood that eventually the applications will become entwined, as mentioned in the Physical Infrastructure section above, making them extremely difficult if not impossible to migrate to different infrastructure.
+							</p>
+							<p>
+								If they place each application in different VM's they will increase the applications isolation so they are more portable however they will waste tens or hundreds of GB on the replication of each VM's OS.
+							</p>
+							<p>
+								However, if they develop each application within its own Container they can run the applications either directly on the Host Infrastructure or in a VM. This will avoid the large capacity requirements of VM's and each Container will be isolated from one another so they can easily be migrated to different infrastructure when they are required to.
+							</p>
+						</div>
+					</div>
+					<p>
+						It's important that the configuration and setup of Containers is done properly as they can pose a greater security risk than VMs. As Containers share the Host OS a single compromised container could affect the Host OS, which then could lead to the compromise of the entire machine and all its Containers. A compromised VM, on the other hand, would only affect that one VM and not affect the others. However, this risk is being reduced through new open source technologies.
+					</p>
+				</div>
+
+				<div class="pages-content-end">
+					<h4><strong>Containers, the replacement for VM's?</strong></h4>
+
+					<p>
+						Containers can be used by organisations to great effect to increase the utilisation of infrastructure and making the development and management of applications more Agile and efficient. But Containers do not remove the need to VM's, both VM's and Containers provide different capabilities which can help software delivery.
+					</p>
+					<p>
+						 Containers should be seen as a new(ish) approach to creating and running applications which can be used to further the benefits of VM's or provide additional benefits in scenarios where VM's are not necessary.
+					</p>
+					<div class="pages-narrow-gif">
+						<!-- makes the image smaller than the narrow already -->
+						<img src="../gif/both.gif">
+					</div>
+					<br>
+					<p>
+						<i>
+						If you are interested in finding out more on DevOps, you can view the next blog post on <a href="containers.html" target="_blank">Orchestration here</a>, or all available <a href="../blog.html" target="_blank">Blogs here</a>.
+						</i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div> 	<!-- End pages-narrow Section -->
+
+			<div class="pages-sauce">
+				<div class="text-center">
+					<div class="pages-sauce-content-one">
+					<h3 class="sauce-heading">Sources</h3>
+					<div class="sauce-heading-underline"></div>
+						<div class="pages-content-sauce">
+							<p>
+								Hopefully this blog has provided a <i>Platform of Understanding</i> on Containers, and the benefits they can bring. However, if you want to find out more on the different areas mentioned, below are some links that were used to ensure that the information provided in this blog was accurate, relevant and reliable.
+							</p>
+							<br>
+							<p>
+								<h5>
+									<a class="sauce-link" target="_blank" href="https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016">A brief history of Containers</a>
+								<br><br>									
+									<a class="sauce-link" target="_blank" href="https://www.ibm.com/cloud/learn/containerization">Containerization</a>
+								<br><br>
+									<a class="sauce-link" target="_blank" href="https://medium.com/@TribalWorldwide/docker-whats-all-the-fuss-6e6abfb3aa9">Docker: what’s all the fuss?</a>		
+								<br><br>
+									<a class="sauce-link" target="_blank" href="https://www.cio.com/article/2924995/what-are-containers-and-why-do-you-need-them.html">What are containers and why do you need them?</a>
+								<br><br>																
+									<a class="sauce-link" target="_blank" href="https://www.docker.com/resources/what-container">What is a Container?</a>
+								<br>	
+								</h5>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div> <!-- End pages-wrapper Section -->
+
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script> -->
+<!--- End of Script Source Files -->
+
+
+</body>
+</html>

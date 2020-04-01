@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+body {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  color: #505962;
+}
+
+/*============= PAGES SECTION =============*/
+
+p {
+  margin: 1rem 0 1rem 0;
+}
+
+
+    /*NAVIGATION SECTION - COPIED FROM PRE-MADE AND EDITED */
+.navbar {
+  padding: .7rem 1rem;
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  transition: background-color .5s ease 0s;
+}
+
+/*.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}*/
+
+.navbar-brand img {
+  height: 2.5rem;
+}
+
+.navbar-nav li {
+  padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+  padding-top: .8rem;
+  color: rgba(255,255,255,.5);
+}
+/*this effects the words, making them more centered*/
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: white;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*This enabled me to remove dependcy from navbar-dark and 
+copied the hamburger sign from the scss*/
+
+.navbar .navbar-toggler {
+  border-color: rgb(255,255,255,0.7);
+}
+/**This enabled me to remove dependcy from navbar-dark and 
+copied the hamburger sign from the scss*/
+
+.bg-purple {
+   background-color: #2b073b;
+}
+
+/*************END OF NAVIGATION SECTION******************/
+
+.pages-alignleft {
+  float: left;
+  padding: .5rem 0 0 1rem;
+}
+.pages-alignright {
+  float: right;
+  padding: .5rem 1rem 0 0;
+}
+
+
+h3.pages-heading {
+  color: #38084d;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  /*margin-bottom: 1.9rem;*/
+  margin-bottom:.8rem;
+}
+
+.pages-heading-underline {
+  width: 3rem;
+  height: .2rem;
+  background-color: #2b073b;
+  margin: 0 auto 0rem;
+}
+
+
+/******BODY SECTION******/
+
+/*.pages-wrapper {
+  background-color: #f2f2f2;
+}*/
+
+.pages-narrow {
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4.5rem;
+/*  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;*/
+}
+
+
+.pages-content-one {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+
+.pages-side-note-wrapper{
+  margin-top: 2rem;
+}
+
+.pages-side-note {
+  border-left: 6px solid #2b073b;
+  padding-left: 1.2rem;
+  margin-top: 3rem;
+  font-style: italic;
+  font-size: 87%;
+  max-width: 90%;
+  margin: 0 auto;
+
+}
+
+li {
+  margin-top: .4rem;
+  max-width: 95%;
+}
+
+.pages-side-note li {
+  margin-top: .4rem;
+  max-width: 95%;
+}
+
+.pages-side-note ul {
+    padding-inline-start: 20px;
+}
+
+.pages-content-end {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0 1rem 0;
+}
+
+.pages-content-sauce {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  color: white;
+}
+
+
+/*.pages-textbox a{
+  color: #2b073b;
+}
+
+.pages-textbox a:hover {
+    color: #2b073b;
+    text-decoration: underline;
+}*/
+/*
+.pages-content-one a {
+  color: white!important;
+}
+
+.pages-content-one a:hover {
+  color: white;
+  text-decoration: underline;
+}*/
+
+/*.pages-content-one p{
+  padding: 1rem 0 1rem 0;
+}*/
+
+.pages-main {
+  padding-top: 3rem;
+}
+
+.pages-narrow-image-header {
+  padding-bottom: 1.5rem;
+  }
+
+.pages-narrow-image-header img{
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  max-width: 45%;
+  height: auto;
+}
+
+.pages-narrow-image-content {
+  padding: 1rem 0 1rem 0;
+}
+
+.pages-narrow-image-content img{
+  display: block;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  margin: 0 auto;
+  max-width: 85%;
+  height: auto;
+}
+
+.pages-narrower img{
+  display: block;
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  margin: 0 auto;
+  max-width: 65%;
+  height: auto;
+}
+
+.pages-narrow-gif {
+  padding: 1rem 0 1rem 0;
+  }
+
+.pages-narrow-gif img{
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0 auto;
+  max-width: 60%;
+  height: 250px;
+}
+
+/******SAUCES SECTION******/
+.pages-sauce {
+      background-image:url('../img/SOURCE-SMALL.png');
+      width: 100%;
+      height: auto;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: 0;
+      left: 0;
+      width: auto;
+      display: block;
+      margin: 0px;
+      z-index: -1;
+      border-left: 1px solid grey;
+      border-right: 1px solid grey;
+}
+
+.pages-sauce-content-one {
+  padding-top: 1rem;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-bottom: .5rem; 
+  color: white;
+}
+
+.sauce-link {
+  color: white;
+}
+
+.sauce-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+h3.sauce-heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  /*margin-bottom: 1.9rem;*/
+  margin-top:1rem;
+}
+
+.sauce-heading-underline {
+  width: 3rem;
+  height: .15rem;
+  background-color: white;
+  margin: 0 auto 0rem;
+}
+
+
+/*
+.pages-dark {
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 7rem 2rem;
+  text-align: center;
+  z-index: 1000!important;
+  color:  white;
+}*/
+
+a {
+  color: #2b073b;
+}
+
+a:hover {
+    color: #2b073b;
+    text-decoration: underline;
+}
+
+/*============= PAGES SECTION =============*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TAKEN FROM FIXED.CSS -START HERE*/
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*TAKEN FROM FIXED.CSS -FINISH HERE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 992px (lg) */
+@media (max-width: 991px) {
+  .caption h1 {
+    font-size: 3.5rem;
+    letter-spacing: .2rem;
+    padding-bottom: .8rem;
+  }
+  .caption h3 {
+    font-size: 2.2rem;
+    padding-bottom: 1.7rem;
+  }
+  .btn-lg {
+    padding: .7rem 1.2rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 2.1rem;
+  }
+}
+
+/* Devices under 768px (md) */
+@media (max-width: 767px) {
+  .caption h1 {
+    font-size: 2.7rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+
+  .caption h3 {
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg {
+    padding: .6rem 1.1rem;
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.8rem;
+  }
+  #fixed {
+    background-image: url('img/fixed/apple-mobile.png');
+  }
+  #fixed-2 {
+    background-image: url('img/fixed/office-mobile.png');
+  }
+  footer {
+    background: url('img/footer/footer-mobile.png') no-repeat;
+  }
+  .clients img {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  .top-scroll {
+    display: none!important;
+  }
+}
+
+/* Medium (md) devices (tablets) */
+@media (max-width: 767px) {
+  #title-heading {
+    background-image: url('img/title-background-mobile.png');
+  }
+}
+
+/* Devices under 576px (sm) */
+@media (max-width: 575px) {
+  .caption h1 {
+    font-size: 1.9rem;
+    letter-spacing: .1rem;
+    padding-bottom: .4rem;
+  }
+  .caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  .btn-lg {
+    padding: .4rem .9rem;
+    font-size: .9rem;
+  }
+  .narrow {
+    width: 85%;
+  }
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

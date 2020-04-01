@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+		<!-- makes it usable across browsers -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DevOps Platform</title>
+	<link rel="shortcut icon" href="img/DP-favicon.png">
+	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style1.css">
+	<!-- <link rel="stylesheet" href="css/fixed.css"> -->
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<!-- this makes the sections responseive in the title -->
+	<!-- if you didnt want to use scroll spy you could just use the active class -->
+
+<!-- Start Home Section -->
+<div id="home">
+		<!-- offset provides an additional gap so the header does not overlap with the section -->
+
+<!-- Navigation	 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top">
+	<!-- navbar-expand-md makes it expand when the screen goes past a certain size -->
+	<a class="navbar-brand" href="index.html"><img src="img/DPW6bold.png"></a>
+		<!-- navbar-brand is classic way to add a logo -->
+		<!-- index.html should take it back to the front page if using a multi page website -->
+	<button class="navbar-toggler" type="button" data-toggle="collapse" 
+	data-target="#navbarResponsive">
+
+		<!-- this creates the button when collapsed. It will show all navbarResponsive -->
+		<span class="navbar-toggler-icon"></span>
+			<!-- this creates the hamburger sign -->
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+		<!-- ml to push to right, centre md-auto, left mx-auto -->		
+			<li class="nav-item">
+				<a class="nav-link active" href="#home">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="blog.html">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>	
+		</ul>													
+	</div>
+</nav>
+<!-- End Navigation -->
+
+<!-- Start Landing Page Section -->
+<div class="landing">
+		<!-- this was taken from fixed.css but now in style.css -->
+	<div class="home-wrap">
+		<div class="home-inner">
+		</div>
+	</div>
+</div>
+
+<div class="caption text-center">
+		<!-- text center will make everything in the div centred -->
+	<h1>Demystifying DevOps</h1>
+	<h3>By Creating a platform of understanding</h3>
+		<!-- outline makes it transparent on the inside -->
+		<!-- light gives it a light outline -->
+		<!-- There are button sizes from extra small to extra large -->
+		<!-- Google search for bootstrap buttons to find all the ones available -->
+</div>
+
+
+<!-- End Landing Page Section -->
+</div>
+<!-- End Home Section -->
+
+
+<!-- Start Course Section -->
+<div id="course" class="offset">
+	<!-- Dont need to use column when using its full size, but it help with spacing above, and beneath the button -->
+	<div class="main-body">
+		<div class="col 12 narrow text-center">
+			<!-- col 12 is the size, narrow is non bootstrap -->
+			<h1>
+				DevOps Platform
+			</h1>
+			<h3>
+				<p>
+					DevOps is a combination of practices and principles effecting IT delivery, culture, tooling and processes, which enable organisations to improve thier customer satisfaction through improved adaptability and compete more effectively through increased efficiency
+					<!-- Then look no further, here the different aspects and topics of DevOps are broken down with a non-technical view to provide a clearer and simplier view on areas normally over complicated with technical jargon -->
+				</p>
+				<br>
+				<p>
+					Yet trying to understand the different aspects and topics of DevOps can be extremely difficult as it is often wieghed down with technical jargon which requires years of experience to understand.
+				</p>
+				<br>
+				<p>
+					DevOps Platform aims to provide a <i>Platform of Understanding</i>  for any level of technical expertise by using a non-technical perspective to provide a clear and simple view of what is included in DevOps and why enables IT delivery to achieve:
+				</p>
+			</h3>
+				<br>
+
+			<div class="favicon row text-center">
+				<div class="col-sm-6 col-md-3">
+					<h4>Increased Deployment frequency</h4>
+					<i class="fas fa-box fa-4x"></i>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Decreased time to restore service</h4>
+					<i class="fas fa-wrench fa-4x"></i>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Decreased change failure rate</h4>
+					<i class="far fa-times-circle fa-4x"></i>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Decreased lead time for changes</h4>
+					<i class="fas fa-hourglass-half fa-4x"></i>
+				</div>
+			</div>
+			<h3>
+				<br>
+				<br>
+				<p> 
+					<strong>Have a look at what's available</strong>
+				</p>
+				<button class="button button1" onclick="window.location.href = 'blog.html';"><strong>Blogs</strong></button>
+				<br>
+
+			</h3>
+
+					<!-- lead will make it lighterwight than normal text -->
+					<!-- _blank opens the link in a new tab -->
+	</div>
+</div>
+<!--- End Course Section -->
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+
+</body>
+</html>
+

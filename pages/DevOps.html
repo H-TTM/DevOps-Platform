@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<!-- makes it usable across browsers -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What is DevOps? | DevOps Platform</title>
+	<link rel="shortcut icon" href="../img/DP-favicon.png">
+	<link rel="stylesheet" href="../bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2pages.css">
+	<link rel="stylesheet" href="../css/fixed.css">
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+	<!-- this makes the sections responseive in the title -->
+	<!-- if you didnt want to use scroll spy you could just use the active class -->
+
+<!-- Start Home Section -->
+<div id="home">
+	<!-- Navigation	 -->
+	<nav class="navbar navbar-expand-md bg-purple fixed-top">
+		<!-- navbar-expand-md makes it expand when the screen goes past a certain size -->
+		<a class="navbar-brand" href="../index.html"><img src="../img/DPW6bold.png"></a>
+			<!-- navbar-brand is classic way to add a logo -->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" 
+		data-target="#navbarResponsive">
+			<!-- this creates the button when collapsed. It will show all navbarResponsive -->
+			<span class="navbar-toggler-icon"></span>
+				<!-- this creates the hamburger sign -->
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="pages navbar-nav ml-auto">
+			<!-- ml to push to right, centre md-auto, left mx-auto -->		
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>	
+			</ul>													
+		</div>
+	</nav>	
+	<!--- End Navigation -->
+</div>	
+<!--- End Home Section -->
+
+<!-- Start pages-wrapper Section -->
+<div class="pages-wrapper">
+	<!-- makes the background color -->
+
+	<!-- Start pages-narrow Section -->
+	<div class="pages-narrow">
+		<!-- makes it 75% of the page -->
+			<div id="pages-textbox">
+				<p class="pages-alignleft">
+					<a href="../index.html">Home</a>
+					>
+					<a href="../blog.html">Blog</a>
+				</p>
+				<p class="pages-alignright">21 February 2020</p>
+			</div>
+
+
+			<!-- *****BODY SECTION***** -->
+		<div class="pages-main">
+			<!-- Start Features Section -->
+			<div id="features" class="offset"> 
+					<!-- offset provides an additional gap so the header does not overlap with the section -->
+				<div class="text-center">
+					<div class="col-12">	
+						<h3 class="pages-heading">What is DevOps?</h3>
+						<div class="pages-heading-underline"></div>
+					</div>
+					<br>
+				</div> <!-- end text center -->
+			</div> <!-- End Features Section -->
+
+			<!-- *****IMAGE SECTION***** -->
+			<div class="pages-narrow-image-header">
+					<!-- makes the image smaller than the narrow already -->
+				<img src="../img/devops-road.jpg">
+					<!-- Change image here  -->
+			</div>
+
+
+			<div id="features" class="offset"> 
+					<!-- offset provides an additional gap so the header does not overlap with the section -->
+				<!-- <div class="text-center"> -->
+					<div class="pages-content-one">
+						<p>
+							DevOps is a term which is being used more and more, yet definitions can vary and be hard to understand. At its core, DevOps is about improving IT operational efficiency, delivery speed and quality by increasing collaboration, teamwork, innovation, automation and forming a culture of shared understanding. In doing so removing the walls between historically siloed teams.
+						</p>
+						<p>
+							This is where definitions can start to get a bit vague. DevOps requires substantial changes to the processes, culture and mindset of the traditional Software Delivery Life Cycle (SDLC). That's why when trying to understand DevOps it can seem similar to seeking a definition of inner peace rather than a new approach to IT operations.
+						</p>
+							<div class="pages-narrow-gif">
+							<!-- makes the image smaller than the narrow already -->
+								<img src="../gif/unagi.gif">
+							</div>
+						<p>
+							To provide a <i>Platform of Understanding</i> on DevOps this blog will start by providing an overview of the SDLC history covering the three main types of Software Delivery that have developed over time: Waterfall, Agile, and DevOps. Once that has been covered the blog will end with if and how DevOps adoption can be measured, and why DevOps matters. The aim is to show how the concept of collaboration, unity and automation has become a revolutionary approach for IT Software Delivery.
+						</p>
+						<div class="pages-narrow-gif">
+						<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/are-you-ready.gif">
+						</div>						
+					</div>
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Side note: Software Delivery Life Cycle (SDLC)</strong></h4>
+							<p>	
+								The SDLC is a term which encompasses the processes, roles and responsibilities involved in bringing new software applications, services, updates etc. from an idea to its end users. SLDC can be used quite broadly, for the purpose of this blog it will be used to show how the traditional roles and responsibilities have adapted through the Waterfall, Agile and DevOps approaches to delivering software. In the traditional SDLC these roles have the below responsibilities -		
+							</p>
+							<p>
+								<ul style="list-style-type:none;">
+									<li>
+										<strong>Requirements</strong> - Work with those setting the direction (or funding) to define a set of requirements for what is to be delivered
+									</li>
+									<li>
+										<strong>Design</strong> - Use the requirements to create a detailed design of the planned work, taking into consideration the architecture, dependencies, best practices etc.
+									</li>
+									<li>
+										<strong>Build</strong>  - Create and build the code which contains the functionality highlighted in the designs
+									</li>
+									<li>
+										<strong>Test</strong> - Create and run tests against code to ensure it contains all required functionality and does not detrimentally impact anything else
+									</li>
+									<li>
+										<strong>Operations</strong> - Those involved in the deployment, management and maintenance of software and hardware into live service
+									</li>
+								</ul>
+							</p>
+						</div>
+					</div>
+
+					<div class="pages-content-one">
+						<h3><strong>DevOps History</strong></h3>
+						<p>
+							It is important to note that there has been decades of work and countless websites, documents and presentations on the different approaches to Software Delivery (Waterfall, Agile, and DevOps) so to keep this fairly short and hopefully sweet this blog will provide a relatively brief overview of each, drawing on some of the main characteristics, both positive and negative, to explain how DevOps has formed and how it sets itself apart from the other approaches.
+						</p>
+					</div>
+
+					<div class="pages-content-one">					
+						<h4><strong>Waterfall</strong></h4>
+						<p>
+							Software Delivery began in the 1950's / 1960's and its operational processes were based off what was a tried and tested approach at that time, hardware delivery which focused on localised efficiency by segmenting each step in the manufacturing process. In Software Delivery that resulted in each stage happening sequentially: Requirements, Design, Build, Test, Deploy, Monitor.
+						</p>
+
+						<div class="pages-narrow-image-content">
+								<!-- makes the image smaller than the narrow already -->
+							<img src="../img/waterfall-diagram.jpg">
+						</div>
+
+						<p>
+							This works well for areas with high predictability where each stage can be clearly defined, pre-planned and decoupled. However, none of these factors commonly exist in software delivery and consequentially this has resulted in a fragmented delivery approach where issues are costly and hard to rectify.
+						</p>
+						<p>
+							Some examples of common issues include: Revisiting previously completed stages due to the identification of bugs or issues. This can be problematic as people involved in the previous stage might have moved to a different delivery and fixing bugs requires them to stop what they are doing and remember the work they were doing several weeks/months ago therefore delaying the whole process. In addition, as the product is normally only visible once all of the Development and Testing has completed, near the end of the delivery, change in customer demand or a misunderstanding of requirements can result in an unviable product, which, when an end-to-end delivery cycle can take 12+ months this can result in huge financial and reputational damage.
+						</p>
+
+						<div class="pages-narrow-gif">
+							<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/money-waste.gif">
+						</div>
+
+						<p>
+							One of the main issues that the Waterfall delivery approach has caused is the segmentation of teams and settingof inconsistent objectives. For example, Developers are usually tasked with delivering quickly, whereas those in charge of Operational tasks, such as maintaining live service, are tasked with ensuring live service is not negatively impacted. This results in a culture where teams across the SDLC do not collaborate, this makes resolving issues and understanding their root cause almost impossible. Instead these instances typically result in each team trying to appoint blame instead of working towards resolving and avoiding the issue in the future collaboratively.
+						</p>
+					</div>
+
+					<div class="pages-content-one">
+						<h4><strong>Agile</strong></h4>
+						<p>
+							In 2001 the Agile Manifesto was created, which took on a new look at the SDLC to overcome the issues faced from the Waterfall delivery approach. The focus of Agile is to break down large deliveries into smaller, less complex deliveries, increasing production deployment frequency, collaboration between teams and improving their cross-functional capabilities (i.e. Developer can test code, Tester can develop code).
+						</p>
+						<p>
+						<div class="pages-narrow-image-content">
+								<!-- makes the image smaller than the narrow already -->
+							<img src="../img/agile-diagram.jpg">
+						</div>
+						</p>
+						<p>
+							To achieve this Designers, Developers and Testers all work in the same team (a Scrum) where work is delivered typically in 2-3-week iterations (Sprints). This enables work to be reviewed by the customer, business owner, or their representative (Product Owner) regularly, to ensure what is being delivered meets their requirements and/or expectations. As a result, this removes the issue of working on an incorrect assumption or requirement from 12+ months as work is reviewed every Sprint, significantly reducing the financial and time impact of requirement misalignment. By Designers, Developers and Testers working, collaborating and sharing work, this results in a much faster and efficient approach to delivering working software and resolving bugs or issues.
+						</p>
+
+						<div class="pages-narrow-gif">
+							<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/teamwork.gif">
+						</div>
+
+						<p>
+							Agile made great strides in overcoming the pitfalls of Waterfall delivery, and consequentially has been adopted widely to great effect. However, although it increases collaboration between the Development side of the SDLC (Design, Build, Test) the segregation between Development and Operations remains under this approach. Additionally, Agile's push for greater delivery frequency without the drive for automation and monitoring results in there being a frequent lack of necessary documentation and difficulty in setting appropriate commitments, which creates a high risk for deliveries not staying on track. 
+						</p>
+					</div>
+
+					<div class="pages-content-one">
+						<h4><strong>DevOps</strong></h4>
+						<p>
+							DevOps builds on Agile's increased collaboration by aiming to unite every team in the SDLC by also including Operations with the already bonded Development (<strong>Dev</strong>elopment + <strong>Op</strong>erations = <strong>DevOps</strong>). DevOps also focuses on increasing automation of processes between and within teams, aiming to remove or dramatically reduce inefficiencies, such as manual documentation (e.g. Code Quality reviews, Test plans, Test Outcome Reports etc.).
+						</p>
+
+						<div class="pages-narrow-gif">
+							<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/turtle-power.gif">
+						</div>
+
+						<p>
+							The typical approach when an organisation starts to increase its DevOps capability is to focus on automation to remove bottlenecks and inefficiencies. This can help increase the overall performance of the IT capability however it will be difficult, if not impossible, to unlock the full potential of DevOps, such as being able to deploy to production multiple times per day, improved code quality, reduced time to restore service etc. This is because DevOps also requires a cultural and mindset shift from all levels of hierarchy and seniority.						
+						</p>
+						<div class="pages-narrow-image-content pages-narrower">
+								<!-- makes the image smaller than the narrow already -->
+							<img src="../img/devops-diagram.jpg">
+						</div>					
+						<p>
+							DevOps relies on everyone having the same understanding, doing the right thing the right way, focusing on the same target(s), working together seamlessly, continuously improving, continuously innovating, and delivering faster whilst safeguarding live service. These can be hardest areas to achieve but if done successfully they can drive the most benefit and help to ensure the benefits of DevOps are continuous and sustainable.
+						</p>
+					</div>
+
+					<div class="pages-content-one">
+						<h3><strong>We've done it, right?</strong></h3>
+							
+						<p>
+							DevOps is built around continuous innovation and efficiency improvements by increasing collaboration, teamwork, automation and forming a culture of shared understanding. As a result, it is important to understand that DevOps is not an end result or something that can be achieved. Instead for companies to understand thier DevOps capability, and even compare to another organisation (although that has limited benefit), a maturity scale is commonly used. Where the greater the DevOps maturity the more an organisation has adopted DevOps practices and principles to increase its SDLC efficiency.				
+						</p>
+						<div class="pages-narrow-gif">
+							<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/not-done-yet.gif">
+						</div>
+
+						<p>
+							The premise that DevOps is not a fixed end destination is also shown through how DevOps itself is adapting to meet changing demands. This can be seen through the rise in DevSecOps, which aims embed security through the SDLC, or DevBizOps, which focuses on increasing business representatives in the SDLC. 
+						</p>
+					</div>
+				<!-- </div> end text center -->
+
+
+					<div class="pages-content-end">
+						<h3><strong>What's all the fuss about?</strong></h3>
+
+						<p>
+							We've covered quite a lot so far, but there is one question still outstanding, why does any of this matter?
+						</p>
+						<p>	
+							Software is no longer something which supports a few functions of an organisation, instead it has become vital for almost all organisational functions. It's used in almost every aspect of business; to speak with customers, for employees to work with one another, overcoming geographical distances, understanding how a product meets its demand, identifying and improving efficiencies, and much, much more.
+						</p>
+
+						<div class="pages-narrow-gif">
+						<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/its-connected.gif">
+						</div>
+
+						<p>
+							Software is changing at a pace that organisations are finding difficult to keep up with, it is enabling start-up businesses to operate at such efficiency that they are able to compete with (or beat) much larger, wealthier, and more experienced companies. Just as organisations have become reliant upon software they have also become more restricted by it. Older software and processes can be slow, painfully slow, stopping some organisations from remaining competitive. To overcome this there is a growing demand for a faster and efficient way to deliver and manage software, enter DevOps.
+						</p>
+						<br>
+						<p>
+							<i>
+							If you are interested in finding out more on DevOps, you can view the next blog post on <a href="microservices.html" target="_blank">Microservices here</a>, or all available <a href="../blog.html" target="_blank">Blogs here</a>.
+							</i>
+						</p>
+					</div>
+
+			</div> <!-- End Features Section -->
+		</div>
+	</div> 	<!-- End pages-narrow Section -->
+
+			<div class="pages-sauce">
+				<div class="text-center">
+					<div class="pages-sauce-content-one">
+					<h3 class="sauce-heading">Sources</h3>
+					<div class="sauce-heading-underline"></div>
+						<div class="pages-content-sauce">
+							<p>
+								Hopefully this blog has provided a <i>Platform of Understanding</i> on what DevOps is, its impact to the traditional SLDC, and the benefits it can bring. However, if you want to find out more on the different areas mentioned, below are some links that were used to ensure that the information provided in this blog was accurate, relevant and reliable.
+							</p>
+							<br>
+							<p>
+								<h5>
+									<a class="sauce-link" target="_blank" href="https://www.appknox.com/blog/history-of-devops">History of DevOps</a>
+								<br><br>									
+									<a class="sauce-link" target="_blank" href="https://devops.com/the-origins-of-devops-whats-in-a-name/">The Origins of DevOps: What’s in a Name?</a>
+								<br><br>											
+									<a class="sauce-link" target="_blank" href="https://dzone.com/articles/the-transformation-from-waterfall-to-devops-to-dev">The Transformation From Waterfall to DevOps to DevSecOps and Continuous Security</a>
+								<br><br>		
+									<a class="sauce-link" target="_blank" href="https://newrelic.com/devops/what-is-devops">What Is DevOps</a>
+								<br><br>
+									<a class="sauce-link" target="_blank" href="https://www.astadia.com/blog/what-is-devops-a-complete-history-waterfall-to-devops-2-0">What is DevOps? A Complete History: Waterfall to DevOps 2.0</a>	
+								<br><br>			
+								</h5>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div> <!-- End pages-wrapper Section -->
+
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script> -->
+<!--- End of Script Source Files -->
+
+
+</body>
+</html>
