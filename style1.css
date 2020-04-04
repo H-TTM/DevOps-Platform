@@ -41,15 +41,93 @@ a:hover {
 
 
 
+/*----------------------------------------------------------------------------*/
+                            /*ABOUT PAGE*/
+
+.about-top {
+  margin-top: 4.5rem;
+}
 
 
+.about-header {
+  background-color: #f0f2f4;
+  color: #2b073b;
+  position: relative;
+  padding: 4.3rem 0 3rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+/*5f2e66*/
+
+/*#2b073b*/
+
+.about-header h2 {
+    color: #2b073b;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    /*text-shadow: 0.1rem 0.1rem 0.8rem white;*/
+    padding-bottom: 2rem;
+}
 
 
+.about-header h3 {
+    color: #5f2e66;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1em;
+    /*text-shadow: 0.1rem 0.1rem 0.8rem white;*/
+    padding-bottom: 1rem;
+}
 
 
+.about-middle {
+  background-color: #2b073b;
+  color: #f0f2f4;
+  position: relative;
+  padding: 2.3rem 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-middle-content{
+  max-width: 80%;
+  margin: 0 auto;
+  word-spacing: 1.6px;
+  line-height: 160%;
+}
+
+.about-middle-content h6{
+  font-size: .8rem;
+}
 
 
-/*--- Start Nuno 5 Page Version Style --*/
+.about-link {
+  color: #f0f2f4;
+}
+
+.about-link:hover {
+  color: #f0f2f4;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  div.about-middle-content {
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 180%;
+    word-spacing: 1.4px;
+  }
+}
+
+
+                            /*ABOUT PAGE*/
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+
+
 
 .navbar.always-solid {
   background: rgba(0, 0, 0, 0.7)!important;
@@ -90,7 +168,6 @@ h3.title-heading {
   }
 }
 
-/*--- End Nuno 5 Page Version Style --*/
 
 body {
   overflow-x: hidden;
@@ -132,8 +209,25 @@ body {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: #1ebba3;
+  color: white;
 }
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*This enabled me to remove dependcy from navbar-dark and 
+copied the hamburger sign from the scss*/
+
+.navbar .navbar-toggler {
+  border-color: rgb(255,255,255,0.7);
+}
+/**This enabled me to remove dependcy from navbar-dark and 
+copied the hamburger sign from the scss*/
+
+.bg-purple {
+   background-color: #2b073b;
+}
+
 .navbar.solid {
   background: rgba(0, 0, 0, 0.7)!important;
   transition: background-color 1s ease 0s;
@@ -168,6 +262,28 @@ body {
   text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 2rem;
 }
+
+@media screen and (max-width: 600px) {
+   div.caption h1 {;
+    margin: 0px;
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   div.caption h3 {;
+    text-align: center;
+    font-size: 1.85rem;
+   line-height: 180%;
+   max-width: 80%;
+   margin: 0 auto;
+  }
+}
+
+
+
 .btn-lg {
   border-width: medium;
   border-radius: 0;
@@ -243,7 +359,7 @@ body {
 
 
 .main-body {
-  background-color: #e9ecef;
+  background-color: #f0f2f4;
   color: #2b073b;
 /*    background-color: #2b073b;
     color: white;*/
@@ -305,11 +421,11 @@ body {
   text-decoration: underline;
 }
 
-/*
-a:hover {
-    color: #2b073b;
-    text-decoration: underline;
-}*/
+
+.icon-col {
+  padding: 0 0 2rem 0!important;
+}
+
 
 /*============= BLOG-POST SECTION =============*/
 
@@ -350,12 +466,150 @@ a:hover {
 
 /*============= FEATURES SECTION =============*/
 
-.narrow {
-  width: 75%;
+
+.pages-content {
+  max-width: 80%;
   margin: 0 auto;
-  /*padding-top: 2rem;*/
-  padding-top: 1.5rem;
+  word-spacing: 1px;
+  line-height: 160%;
 }
+
+
+.pages-content-index {
+  padding-top: 2.7rem;
+  text-align: center;
+}
+
+
+.blog-image-box img{
+  float: left;
+  /*max-height: 335px;*/
+  max-width:33%;
+  overflow: auto;
+}
+
+
+
+
+.blog-column {
+  background-color: white;
+  padding: 0rem!important;
+  border-top: .2rem solid #2b073b;
+  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
+  transition: transform .7s ease;
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0rem;
+  color: #2b073b;
+  max-height: 335px;
+  text-align: center;
+}
+
+.blog-text-box {
+  margin-left: 33%;
+  line-height: 200%;
+  font-size: 120%;
+}
+
+.blog-text-box h3{
+  line-height: 150%;
+  padding-bottom: 1rem;
+}
+
+/*THIS IS FOR MOBILE AND TABLET DEVICES TO MAKE IT MORE READABLE*/
+@media screen and (max-width: 1030px) {
+  div.blog-text-box {
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  div.blog-text-box h3{
+    font-size: 160%;
+    line-height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  div.blog-text-box h3{
+    font-size: 120%;
+    line-height: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  div.blog-text-box {
+    font-size: 80%;
+    line-height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 530px) {
+  div.blog-text-box {
+    font-size: 60%;
+    line-height: 100%;
+  }
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+
+.pages-content-blog {
+  padding-top: 2rem;
+  text-align: center;
+  max-width: 90%;
+}
+
+
+/*THIS IS FOR MOBILE AND TABLET DEVICES TO MAKE IT MORE READABLE*/
+@media screen and (max-width: 600px) {
+  div.pages-content {
+    font-size: 16px;
+    max-width: 90%;
+    /*line-height: 450%;*/
+    /*word-spacing: 5.4px;*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.pages-content p{;
+    line-height: 180%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   div.pages-content h1 {;
+    margin: 0px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   div.caption h1 {;
+    margin: 0px;
+    text-align: center;
+    font-size: 3.2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+   div.caption h3 {;
+    text-align: center;
+    font-size: 1.85rem;
+   line-height: 180%;
+   max-width: 80%;
+   margin: 0 auto;
+  }
+}
+
+/*-------------------------------------------------------------------------------*/
+
 .btn-sm {
   border-width: medium;
   border-radius: 0;
@@ -380,6 +634,7 @@ a:hover {
   margin-bottom: 0;
   border-radius: 0;
   padding: 6rem 0 4rem;
+  background-color: #f0f2f4;
 }
 h3.heading {
   font-size: 1.9rem;
@@ -475,12 +730,12 @@ blockquote .svg-inline--fa {
   color: #2b073b;
 }
 
-.blog-column p {
+/*.blog-column p {
     padding: 1rem 0 1rem 0;
     width: 80%;
     margin: 0 auto;
     line-height: 2.2em;
-}
+}*/
 
 
 .blog-narrow {
@@ -747,7 +1002,7 @@ a.top-scroll:hover {
 
 /* Devices under 992px (lg) */
 @media (max-width: 991px) {
-  .caption h1 {
+/*  .caption h1 {
     font-size: 3.5rem;
     letter-spacing: .2rem;
     padding-bottom: .8rem;
@@ -755,20 +1010,20 @@ a.top-scroll:hover {
   .caption h3 {
     font-size: 2.2rem;
     padding-bottom: 1.7rem;
-  }
+  }*/
   .btn-lg {
     padding: .7rem 1.2rem;
     font-size: 1rem;
   }
-  .narrow h1 {
+/*  .narrow h1 {
     font-size: 2.1rem;
     color: #2b073b;
-  }
+  }*/
 }
 
 /* Devices under 768px (md) */
 @media (max-width: 767px) {
-  .caption h1 {
+ /* .caption h1 {
     font-size: 2.7rem;
     letter-spacing: .15rem;
     padding-bottom: .5rem;
@@ -776,12 +1031,12 @@ a.top-scroll:hover {
   .caption h3 {
     font-size: 1.7rem;
     padding-bottom: 1.2rem;
-  }
+  }*/
   .btn-lg {
     padding: .6rem 1.1rem;
     font-size: 1rem;
   }
-  .narrow h1 {
+ /* .narrow h1 {
     font-size: 1.8rem;
   }
   #fixed {
@@ -798,13 +1053,13 @@ a.top-scroll:hover {
     margin: 0 auto;
   }
   .top-scroll {
-    display: none!important;
+    display: none!important;*/
   }
 }
 
 /* Devices under 576px (sm) */
 @media (max-width: 575px) {
-  .caption h1 {
+/*  .caption h1 {
     font-size: 1.9rem;
     letter-spacing: .1rem;
     padding-bottom: .4rem;
@@ -812,14 +1067,14 @@ a.top-scroll:hover {
   .caption h3 {
     font-size: 1.2rem;
     padding-bottom: 1rem;
-  }
+  }*/
   .btn-lg {
     padding: .4rem .9rem;
     font-size: .9rem;
   }
-  .narrow {
+/*  .narrow {
     width: 85%;
-  }
+  }*/
 }
 
 
