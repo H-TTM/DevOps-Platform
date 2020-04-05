@@ -306,7 +306,7 @@ copied the hamburger sign from the scss*/
 
 @media screen and (max-width: 530px) {
   div.landing {
-  height: 100vmax;
+  height: 100vw;
   }
 
 }
