@@ -265,23 +265,23 @@ copied the hamburger sign from the scss*/
 
 @media screen and (max-width: 600px) {
    div.caption h1 {;
-    margin: 0px;
+   margin: 0 auto;
     text-align: center;
-    font-size: 3.2rem;
-    padding-bottom: 5rem;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+   max-width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
    div.caption h3 {;
     text-align: center;
-    font-size: 1.85rem;
+    font-size: 1.6rem;
    line-height: 180%;
    max-width: 80%;
    margin: 0 auto;
   }
 }
-
 
 
 .btn-lg {
@@ -405,7 +405,7 @@ copied the hamburger sign from the scss*/
 
 .button1 {
   border-radius: 8px;
-  color: black; 
+  background-color: #f0f2f4; 
   border: 2px solid #2b073b;
 }
 
@@ -535,14 +535,14 @@ copied the hamburger sign from the scss*/
 @media screen and (max-width: 650px) {
   div.blog-text-box h3{
     font-size: 120%;
-    line-height: 100%;
+    line-height: 70%;
   }
 }
 
 @media screen and (max-width: 650px) {
   div.blog-text-box {
     font-size: 80%;
-    line-height: 100%;
+    line-height: 70%;
   }
 }
 
@@ -589,24 +589,6 @@ copied the hamburger sign from the scss*/
   }
 }
 
-@media screen and (max-width: 600px) {
-   div.caption h1 {;
-    margin: 0px;
-    text-align: center;
-    font-size: 3.2rem;
-    padding-bottom: 5rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-   div.caption h3 {;
-    text-align: center;
-    font-size: 1.85rem;
-   line-height: 180%;
-   max-width: 80%;
-   margin: 0 auto;
-  }
-}
 
 /*-------------------------------------------------------------------------------*/
 
