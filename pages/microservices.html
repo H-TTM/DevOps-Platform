@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-		<!-- makes it usable across browsers -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>What are Microservices? | DevOps Platform</title>
 	<link rel="shortcut icon" href="../img/DP-favicon.png">
@@ -13,92 +12,65 @@
 
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-	<!-- this makes the sections responseive in the title -->
-	<!-- if you didnt want to use scroll spy you could just use the active class -->
 
-<!-- Start Home Section -->
-<div id="home">
-	<!-- Navigation	 -->
-	<nav class="navbar navbar-expand-md bg-purple fixed-top">
-		<!-- navbar-expand-md makes it expand when the screen goes past a certain size -->
-		<a class="navbar-brand" href="../index.html"><img src="../img/DPW6bold.png"></a>
-			<!-- navbar-brand is classic way to add a logo -->
-		<button class="navbar-toggler" type="button" data-toggle="collapse" 
-		data-target="#navbarResponsive">
-			<!-- this creates the button when collapsed. It will show all navbarResponsive -->
-			<span class="navbar-toggler-icon"></span>
-				<!-- this creates the hamburger sign -->
-		</button>
-		<div class="collapse navbar-collapse" id="navbarResponsive">
-			<ul class="pages navbar-nav ml-auto">
-			<!-- ml to push to right, centre md-auto, left mx-auto -->		
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../blog.html">Blog</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>	
-			</ul>													
-		</div>
-	</nav>	
-	<!--- End Navigation -->
-</div>	
-<!--- End Home Section -->
+	<div id="home">
+		<nav class="navbar navbar-expand-md bg-purple fixed-top">
+			<a class="navbar-brand" href="../index"><img src="../img/DPW6bold.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="pages navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../about">About</a>
+					</li>	
+				</ul>													
+			</div>
+		</nav>	
+	</div>	
 
-<!-- Start pages-wrapper Section -->
 <div class="pages-wrapper">
-	<!-- makes the background color -->
 
-	<!-- Start pages-narrow Section -->
-	<div class="pages-narrow">
-		<!-- makes it 75% of the page -->
-			<div id="pages-textbox">
-				<p class="pages-alignleft">
-					<a href="../index.html">Home</a>
-					>
-					<a href="../blog.html">Blog</a>
-				</p>
-				<p class="pages-alignright">15 March 2020</p>
-			</div>
+	<div class="pages-content pages-content-top">
 
+		<p style="text-align:left;">
+							<a href="../index">Home</a>
+							>
+							<a href="../blog">Blog</a>
+		    <span style="float:right;">
+		        20 March 2020
+		    </span>
+		</p>
 
-			<!-- *****BODY SECTION***** -->
-		<div class="pages-main">
-			<!-- Start Features Section -->
-			<div id="features" class="offset"> 
-					<!-- offset provides an additional gap so the header does not overlap with the section -->
-				<div class="text-center">
-					<div class="col-12">	
-						<h3 class="pages-heading">Microservices</h3>
-						<div class="pages-heading-underline"></div>
-					</div>
-					<br>
-				</div> <!-- end text center -->
-			</div> <!-- End Features Section -->
+		<div class="col-12">	
+			<h3 class="pages-heading">Microservices</h3>
+			<div class="pages-heading-underline"></div>
+		</div>
+		<br>
+	</div> 
 
-			<!-- *****IMAGE SECTION***** -->
-			<div class="pages-narrow-image-header">
-					<!-- makes the image smaller than the narrow already -->
+			<div class="pages-content pages-content-image pages-content-image-header">
 				<img src="../img/microservices.png">
-					<!-- Change image here  -->
 			</div>
 
-
 			<div id="features" class="offset"> 
-					<!-- offset provides an additional gap so the header does not overlap with the section -->
-				<!-- <div class="text-center"> -->
-					<div class="pages-content-one">
+
+					<div class="pages-content pages-content-one">
 						<p>
-							Microservices are an approach to developing software applications which aims to segregate different functionalities into single-function independent services. Microservices perform standalone activities which typically communicate with one another through API's (Application Programming Interfaces). This has grown in popularity through Agile and DevOps (more on these can be found <a href="DevOps.html" target="_blank">here</a>) as Microservices can enable faster, more efficient software delivery.
+							Microservices are an approach to developing software applications which aims to segregate different functionalities into single-function independent services. Microservices perform standalone activities which typically communicate with one another through API's (Application Programming Interfaces). This has grown in popularity through Agile and DevOps (more on these can be found <a href="DevOps" target="_blank">here</a>) as Microservices can enable faster, more efficient software delivery.
 						</p>
 						<p>
 							To provide a <i>Platform of Understanding</i> on Microservices this blog will first explain the traditional approach to developing software before moving onto Microservices, using an example throughout to highlight how these approaches differ and the benefits and disadvantages of each. The blog will end with a view on which approach is better suited for organisations. 
 						</p>
 					</div>
-					<div class="pages-side-note-wrapper">
+					<div class="pages-content pages-side-note-wrapper">
 						<div class="pages-side-note">
 							<h4><strong>Side note: Application Programming Interface (API)</strong></h4>
 							<p>	
@@ -110,14 +82,13 @@
 						</div>
 					</div>
 
-					<div class="pages-content-one">
+					<div class="pages-content pages-content-one">
 						<h3><strong>'Monoliths' - Traditional approach</strong></h3>
 						<p>
 							'Monolith' is a name provided to the how software services/applications have traditionally, and still continue to be, developed. This is where a service is built as a single block of code, which contains all the functions and business activities the application performs. 
 						</p>
 
-						<div class="pages-narrow-gif">
-							<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-gif">
 							<img src="../gif/Big-Deal.gif">
 						</div>
 
@@ -134,8 +105,7 @@
 						<p>
 							Company A wants to create a 'Welcome Email' service which obtains a new users contact information, forms a standardised welcome email, and sends it to them. A simple and effective service as shown below.
 						</p>
-						<div class="pages-narrow-image-content">
-								<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-image">
 							<img src="../img/Microservices-Monolith-Single-Function.jpg">
 						</div>	
 						<br>					
@@ -156,7 +126,6 @@
 									Both services will obtain information on how long the user has been a customer and include that in their emails
 								</li>
 							</ul>
-
 						</p>
 
 						<p>
@@ -182,11 +151,12 @@
 							This approach now means that additional decision points need to be added into the code to ensure that the correct email is sent to the correct customer. The 'Email' service now looks like the below diagram.
 						</p>
 
-						<div class="pages-narrow-image-content">
-								<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-image">
 							<img src="../img/Microservices-Monolith-Multiple-Function.jpg">
 						</div>	
+					</div>
 
+					<div class="pages-content pages-content-end">
 						<h4><strong>Pitfalls of traditional 'Monolith' approach</strong></h4>
 						<p>
 							Containing all the code for multiple services under one code base provides the benefit of reducing duplication of code. However, as more services and functionalities are added under one code base the more complicated it gets to manage, as an alteration to any of the services need to ensure there is no detrimental impact any of the other services. This results in changes taking longer than necessary as significant amounts of testing needs to be carried out for any change, big or small.
@@ -197,14 +167,12 @@
 						<p>
 							In terms of the Company A example, the performance of the simple 'Welcome Email' service will now be considerably worse as additional steps have been added in the code to ensure not all 3 emails are sent each time the Monolithic 'Email' service is called.
 						</p>
-						<div class="pages-narrow-gif">
-							<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-gif">
 							<img src="../gif/taking-so-long.gif">
 						</div>
-
 					</div>
 
-					<div class="pages-content-one">					
+					<div class="pages-content pages-content-one">					
 						<h3><strong>Microservices</strong></h3>
 						<p>
 							Microservices, or Microservice Architecture aims to overcome the challenges of Monolithic services by taking the complete opposite approach to code management. The aim is to split code into segregated, independent services, which perform isolated actions in their simplest form. 
@@ -232,8 +200,7 @@
 							Traditionally, teams will make updates to 'Monoliths', sometimes simultaneously, adding desired features. This can be slow and painful as updates to the code might not follow the same coding standards which can result in nonsensical code descriptions or varying quality, amongst other things. This is made worse when another teams code needs to be fixed due to it causing an update not to work.
 						</p>
 
-						<div class="pages-narrow-gif">
-							<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-gif">
 							<img src="../gif/what-you-do.gif">
 						</div>
 
@@ -247,8 +214,7 @@
 							Company A decided to take thee Microservices approach instead of the Monolithic approach to developing their applications. As a result, they have broken down the 'Email' services into small pieces of functionality and developed the as. Using this approach the 'Welcome', 'Promotion' and 'Cancel' email services now look like the below diagram.
 						</p>
 
-						<div class="pages-narrow-image-content">
-								<!-- makes the image smaller than the narrow already -->
+						<div class="pages-content-image">
 							<img src="../img/Microservices-Multiple-Function-Microservice-Architecture.jpg">
 						</div>						
 
@@ -259,7 +225,7 @@
 
 					
 
-					<div class="pages-content-one">
+					<div class="pages-content pages-content-one">
 						<h3><strong>So, Microservices solve everything right?</strong></h3>
 
 						<p>
@@ -275,13 +241,13 @@
 							</li>
 						</ul>
 
-						<div class="pages-narrow-gif">
+						<div class="pages-content-gif">
 						<!-- makes the image smaller than the narrow already -->
 							<img src="../gif/tiny.gif">
 						</div>
 					</div>
 
-					<div class="pages-content-end">
+					<div class="pages-content pages-content-end">
 						<h3><strong>Microservices vs 'Monoliths'</strong></h3>
 						<p>
 							Microservices go hand-in-hand with an Agile and DevOps orientated organisations. Microservices can be leveraged to great effect for building and maintaining efficient and effective Enterprise applications as they can be created, updated, and deployed with little or no impact to other Microservices.
@@ -298,7 +264,7 @@
 						<br>
 						<p>
 							<i>
-							If you are interested in finding out more on DevOps, you can view the next blog post on <a href="containers.html" target="_blank">Containers here</a>, or all available <a href="../blog.html" target="_blank">Blogs here</a>.
+							If you are interested in finding out more on DevOps, you can view the next blog post on <a href="containers" target="_blank">Containers here</a>, or all available <a href="../blog" target="_blank">Blogs here</a>.
 							</i>
 						</p>
 					</div>
