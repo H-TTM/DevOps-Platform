@@ -303,12 +303,12 @@ copied the hamburger sign from the scss*/
   display: table;
   z-index: -1;
 }
-
+/*
 @media screen and (max-width: 530px) {
   div.landing {
   height: 100vw;
   }
-
+*/
 }
 .home-wrap {
   clip: rect(0, auto, auto, 0);
