@@ -50,7 +50,8 @@ a:hover {
 
 
 .about-header {
-  background-color: #f0f2f4;
+  background-color: #5f2e66;
+  /*background-color: #f0f2f4;*/
   color: #2b073b;
   position: relative;
   padding: 4.3rem 0 3rem 0;
@@ -62,7 +63,8 @@ a:hover {
 /*#2b073b*/
 
 .about-header h2 {
-    color: #2b073b;
+    /*color: #2b073b;*/
+    color: #f0f2f4;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -75,7 +77,7 @@ a:hover {
 .about-header h3 {
     color: #5f2e66;
     font-size: 2rem;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
     letter-spacing: .1em;
     /*text-shadow: 0.1rem 0.1rem 0.8rem white;*/
@@ -84,12 +86,19 @@ a:hover {
 
 
 .about-middle {
-  background-color: #2b073b;
-  color: #f0f2f4;
+  background-color: #f0f2f4;
+  color: #2b073b;
+/*  background-color: #2b073b;
+  color: #f0f2f4;*/
   position: relative;
   padding: 2.3rem 0;
   margin: 0 auto;
   text-align: center;
+}
+
+.about-middle h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
 }
 
 .about-middle-content{
@@ -234,10 +243,29 @@ copied the hamburger sign from the scss*/
 }
 
 /*============= LANDING PAGE =============*/
-
-.home-inner {
-  background-image: url(img/purplecity.jpg)
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+.home-inner {
+  background-image: url(img/purplecity.jpg);
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
 .caption {
   width: 100%;
   max-width: 100%;
@@ -303,22 +331,17 @@ copied the hamburger sign from the scss*/
   display: table;
   z-index: -1;
 }
-/*
-@media screen and (max-width: 530px) {
-  div.landing {
-  height: 100vw;
-  }
-*/
-}
-.home-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
+
+.about-landing {
+  position: relative;
   width: 100%;
-  height: 100%;
+  height: 400px;
+  display: table;
+  z-index: -1;
 }
+
 .home-inner {
+  background-image: url(img/purplecity-narrow.jpg);
   position: fixed;
   display: table;
   top: 0;
@@ -331,6 +354,39 @@ copied the hamburger sign from the scss*/
           transform: translateZ(0);
   will-change: transform;
 }
+
+
+
+/*
+@media screen and (max-width: 530px) {
+  div.landing {
+  height: 100vw;
+  }
+*/
+}
+/*.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}*/
+.home-inner {
+  background-image: url(img/purplecity.jpg);
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
 
 /*--- iOS Fixed Background Image --*/
 .fixed-background {
@@ -380,7 +436,7 @@ copied the hamburger sign from the scss*/
 }
 
 .main-body h3 {
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   margin-bottom: 0rem;
 }
 
@@ -412,22 +468,30 @@ copied the hamburger sign from the scss*/
 
 .button1 {
   border-radius: 8px;
-  background-color: #f0f2f4; 
+  /*background-color: #f0f2f4; */
   border: 2px solid #2b073b;
+  background-color: #2b073b; 
+  /*border: 2px solid #f0f2f4;*/
+  color: #f0f2f4;
 }
 
 .button1:hover {
   border-radius: 8px;
-  background-color: #2b073b;
-  color: white;
-}
-
-
-.button1:hover a{
-  color: white;
+  /*background-color: #2b073b;*/
+  background-color: #f0f2f4;  
+  border: 2px solid #2b073b;
+  color: #2b073b;
+  /*color: #f0f2f4;*/
   text-decoration: underline;
 }
 
+
+/*.button1:hover a{
+  color: white;
+  color: #2b073b;
+  text-decoration: underline;
+}
+*/
 
 .icon-col {
   padding: 0 0 2rem 0!important;
@@ -486,7 +550,12 @@ copied the hamburger sign from the scss*/
   padding-top: 2.7rem;
   text-align: center;
 }
-
+/*
+.pages-content-invert{
+  background-color: #2b073b;
+  color: #f0f2f4; 
+  max-width: 100%;
+}*/
 
 .blog-image-box img{
   float: left;
