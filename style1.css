@@ -48,28 +48,51 @@ a:hover {
   margin-top: 4.5rem;
 }
 
+.about-caption {
+  padding: 4rem 0;
+  text-align: center;
+  position: static!important;
+}
+
+.about-landing {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: table;
+  z-index: -1;
+  background-image: url(img/devops-circle.jpg);
+}
+
+@media screen and (max-width: 600px) {
+  div.about-landing {
+  height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.about-middle-content {
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 180%;
+    word-spacing: 1.4px;
+  }
+}
+
 
 .about-header {
-  background-color: #5f2e66;
-  /*background-color: #f0f2f4;*/
   color: #2b073b;
   position: relative;
   padding: 4.3rem 0 3rem 0;
   margin: 0 auto;
   text-align: center;
 }
-/*5f2e66*/
-
-/*#2b073b*/
 
 .about-header h2 {
-    /*color: #2b073b;*/
     color: #f0f2f4;
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: .2rem;
-    /*text-shadow: 0.1rem 0.1rem 0.8rem white;*/
     padding-bottom: 2rem;
 }
 
@@ -77,19 +100,15 @@ a:hover {
 .about-header h3 {
     color: #5f2e66;
     font-size: 2rem;
-    /*text-transform: uppercase;*/
     font-weight: 700;
     letter-spacing: .1em;
-    /*text-shadow: 0.1rem 0.1rem 0.8rem white;*/
     padding-bottom: 1rem;
 }
 
 
-.about-middle {
+/*.about-middle {
   background-color: #f0f2f4;
   color: #2b073b;
-/*  background-color: #2b073b;
-  color: #f0f2f4;*/
   position: relative;
   padding: 2.3rem 0;
   margin: 0 auto;
@@ -129,7 +148,7 @@ a:hover {
     line-height: 180%;
     word-spacing: 1.4px;
   }
-}
+}*/
 
 
                             /*ABOUT PAGE*/
@@ -276,7 +295,7 @@ copied the hamburger sign from the scss*/
 .caption h1 {
   color: white;
   font-size: 4.5rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 700;
   letter-spacing: .3rem;
   text-shadow: .1rem .1rem .8rem black;
@@ -285,13 +304,13 @@ copied the hamburger sign from the scss*/
 .caption h3 {
   color: white;
   font-size: 2.5rem;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-weight: 400;
   text-shadow: .1rem .1rem .5rem black;
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
    div.caption h1 {;
    margin: 0 auto;
     text-align: center;
@@ -301,7 +320,7 @@ copied the hamburger sign from the scss*/
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
    div.caption h3 {;
     text-align: center;
     font-size: 1.6rem;
@@ -330,61 +349,6 @@ copied the hamburger sign from the scss*/
   height: 100vh;
   display: table;
   z-index: -1;
-}
-
-.about-landing {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  display: table;
-  z-index: -1;
-}
-
-.home-inner {
-  background-image: url(img/purplecity.jpg);
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
-}
-
-
-
-/*
-@media screen and (max-width: 530px) {
-  div.landing {
-  height: 100vw;
-  }
-*/
-}
-/*.home-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}*/
-.home-inner {
-  background-image: url(img/purplecity.jpg);
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
 }
 
 
@@ -424,6 +388,7 @@ copied the hamburger sign from the scss*/
 .main-body {
   background-color: #f0f2f4;
   color: #2b073b;
+  padding-bottom: 1rem;
 /*    background-color: #2b073b;
     color: white;*/
 }
