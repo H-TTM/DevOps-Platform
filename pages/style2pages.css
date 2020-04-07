@@ -129,7 +129,16 @@ h3.pages-heading {
 }
 
 /*THIS IS FOR MOBILE AND TABLET DEVICES TO MAKE IT MORE READABLE*/
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
+  div.pages-content {
+    font-size: 16px;
+    max-width: 90%;
+    line-height: 180%;
+    word-spacing: 1.4px;
+  }
+}*/
+
+@media screen and (max-width: 900px) {
   div.pages-content {
     font-size: 16px;
     max-width: 90%;
@@ -137,6 +146,7 @@ h3.pages-heading {
     word-spacing: 1.4px;
   }
 }
+
 
 .pages-content-top {
   padding-top: 4.5rem;
@@ -228,6 +238,13 @@ li {
 .pages-content-image-header img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 45%;
+}
+
+@media screen and (max-width: 900px) {
+  div.pages-content-image img {
+   max-width: 70%;
+   height: auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
