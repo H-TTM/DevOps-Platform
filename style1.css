@@ -331,6 +331,25 @@ copied the hamburger sign from the scss*/
   }
 }
 
+@media screen and (max-width: 450px) {
+   div.caption h1 {;
+   margin: 0 auto;
+   text-align: center;
+   font-size: 2rem;
+   padding-bottom: 1rem;
+   max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+   div.caption h3 {;
+   font-size: 1.3rem;
+   line-height: 180%;
+   max-width: 80%;
+   margin: 0 auto;
+  }
+}
+
 
 .btn-lg {
   border-width: medium;
@@ -569,19 +588,19 @@ copied the hamburger sign from the scss*/
 @media screen and (max-width: 1030px) {
   div.blog-text-box h3{
     font-size: 160%;
-    line-height: 100%;
+    line-height: 120%;
   }
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 680px) {
   div.blog-text-box h3{
     font-size: 120%;
     line-height: 70%;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 680px) {
   div.blog-text-box {
     font-size: 80%;
     line-height: 70%;
@@ -593,6 +612,14 @@ copied the hamburger sign from the scss*/
   div.blog-text-box {
     font-size: 60%;
     line-height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  div.blog-text-box {
+    font-size: 50%;
+    line-height: 20%;
   }
 }
 
