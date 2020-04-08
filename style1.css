@@ -49,7 +49,8 @@ a:hover {
 }
 
 .about-caption {
-  padding: 4rem 0;
+  /*padding: 4rem 0;*/
+  margin: 0 auto;
   text-align: center;
   position: static!important;
 }
@@ -57,19 +58,19 @@ a:hover {
 .about-landing {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 270px;
   display: table;
   z-index: -1;
-  background-image: url(img/devops-circle.jpg);
+  background-image: url(img/devops-circle-1.6.jpg);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   div.about-landing {
   height: 200px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   div.about-middle-content {
     font-size: 16px;
     max-width: 90%;

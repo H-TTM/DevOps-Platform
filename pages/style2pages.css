@@ -276,7 +276,7 @@ li {
 
 /******SAUCES SECTION******/
 .pages-sauce {
-      background-image:url('../img/SOURCE-SMALL.png');
+      background-image:url('../img/devops-circle-1.6.jpg');
       width: 100%;
       height: auto;
       background-size: cover;
@@ -296,15 +296,17 @@ li {
   max-width: 80%;
   margin: 0 auto;
   padding-bottom: .5rem; 
-  color: white;
+  color: #f0f2f4;
+  font-weight: bold;
 }
 
 .sauce-link {
-  color: white;
+  font-weight: bold;
+  color: #f0f2f4;
 }
 
 .sauce-link:hover {
-  color: white;
+  color: #f0f2f4;
   text-decoration: underline;
 }
 

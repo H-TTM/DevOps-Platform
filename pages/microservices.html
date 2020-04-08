@@ -95,7 +95,7 @@
 					<div class="pages-content pages-content-one">
 						<h3><strong>'Monoliths' - Traditional approach</strong></h3>
 						<p>
-							'Monolith' is a name provided to the how software services/applications have traditionally, and still continue to be, developed. This is where a service is built as a single block of code, which contains all the functions and business activities the application performs. 
+							'Monolith' is a name provided to how software services/applications have traditionally, and still continue to be, developed. This is where an entire service is built as a single block of code (a code base), which contains all the functions and business activities the application performs.
 						</p>
 
 						<div class="pages-content-gif">
@@ -113,7 +113,7 @@
 							 
 						</p>
 						<p>
-							Company A wants to create a 'Welcome Email' service which obtains a new users contact information, forms a standardised welcome email, and sends it to them. A simple and effective service as shown below.
+							Company A wants to create a 'Welcome Email' service which obtains a new users contact information from a database, forms a preset standardised welcome email, and sends it to them. A simple and effective service as shown below.
 						</p>
 						<div class="pages-content-image">
 							<img src="../img/Microservices-Monolith-Single-Function.jpg">
@@ -121,7 +121,7 @@
 						<br>					
 						<h4><strong>Example - Part 2: Monolith - Multiple application service</strong></h4>
 						<p>
-							Company A then want to create:
+							Company A then want to also create:
 							<ul>
 								<li>
 									'Promotion Email' service to send promotional emails to its customers
@@ -129,19 +129,22 @@
 								<li>
 									'Cancel Email' service to send a confirmation email when a customers request to cancel their subscription
 								</li>
-								<li>
+							</ul>
+						Both of these additional services would contain much of the same functionality as the ‘Welcome Email’ service as both would require retrieving customer contact details from the database and sending a standardised email to the customer.   In addition, these two new services would also need to retrieve information on how long the user has been a customer to include in the standardised emails. 
+<!-- 								<li>
 									Both services will include most of the functionality in the 'Welcome Email' service
 								</li>
 								<li>
 									Both services will obtain information on how long the user has been a customer and include that in their emails
 								</li>
-							</ul>
+							</ul> -->
 						</p>
+				
 
 						<p>
-							As the 'Welcome Email' service was created under one single code base the 'Promotion Email' and 'Cancel Email' services will either need to duplicate the code in their services or combine all three email services together.
+							As the 'Welcome Email' service was created under one single code base the new 'Promotion Email' and 'Cancel Email' services have 2 options; either duplicate the ‘Welcome Email’ service code and adapt it slightly to achieve the service requirements or the alternative is to combine all three email services together in the one code base. 
 							<br>
-							If they decided to avoid the duplication of code by calling the 'Welcome Email' service it would result in a Welcome Email being sent alongside a Cancel or Promotion email. This is due to the 'Welcome Email' code being contained in one code base which stops certain elements of the code being used in isolation.
+							If they decided to avoid the duplication of code and opt for the second option outlined above, without tailoring it would result in a Welcome Email being sent alongside a Cancel or Promotion email. This is due to the 'Welcome Email' code being contained in one code base which stops certain elements of the code being used in isolation.
 						</p>
 						<p>
 							The decision is made to avoid duplication of effort and code by combing all three into a 'Email' service. So now the 'Email' service contains:
@@ -169,13 +172,13 @@
 					<div class="pages-content pages-content-end">
 						<h4><strong>Pitfalls of traditional 'Monolith' approach</strong></h4>
 						<p>
-							Containing all the code for multiple services under one code base provides the benefit of reducing duplication of code. However, as more services and functionalities are added under one code base the more complicated it gets to manage, as an alteration to any of the services need to ensure there is no detrimental impact any of the other services. This results in changes taking longer than necessary as significant amounts of testing needs to be carried out for any change, big or small.
+							Containing all the code for multiple services under one code base provides the benefit of reducing duplication of code. However, as more and more services and functionalities are added under one code base the more complicated it gets to manage. Any alteration to any of the services included in the code base need to ensure there is no detrimental impact to any of the other services included in the code base. This results in changes taking longer than necessary as significant amounts of testing needs to be carried out for any change, big or small.
 						</p>
 						<p>
-							Additionally, the more code in one code base decreases its overall performance, as code needs to be added to ensure the desired functionality is called without accidentally running one of the other services.
+							Additionally, the more code that exists in one code base will result in a decrease in its overall performance, as code needs to be added to ensure that when one service is called it doesn’t accidentally result in another service in the code base being called.
 						</p>
 						<p>
-							In terms of the Company A example, the performance of the simple 'Welcome Email' service will now be considerably worse as additional steps have been added in the code to ensure not all 3 emails are sent each time the Monolithic 'Email' service is called.
+							In terms of the Company A example, the performance of the simple 'Welcome Email' service will now be considerably worse as additional steps have been added into the code base to ensure not all 3 emails are sent each time the Monolithic 'Email' service is called.
 						</p>
 						<div class="pages-content-gif">
 							<img src="../gif/taking-so-long.gif">
@@ -221,7 +224,7 @@
 						<h4><strong>Example - Part 3: Monolith to Microservices</strong></h4>
 
 						<p>
-							Company A decided to take thee Microservices approach instead of the Monolithic approach to developing their applications. As a result, they have broken down the 'Email' services into small pieces of functionality and developed the as. Using this approach the 'Welcome', 'Promotion' and 'Cancel' email services now look like the below diagram.
+							Company A decided to take the Microservices approach instead of the Monolithic approach to developing their applications. As a result, they have broken down the 'Email' services into small pieces of functionality and developed as seperate Microservices. Using this approach the 'Welcome', 'Promotion' and 'Cancel' email services now look like the below diagram.
 						</p>
 
 						<div class="pages-content-image">
@@ -244,10 +247,10 @@
 
 						<ul>
 							<li>
-								Complexity: As the ancient proverb goes - Would you rather fight one horse-sized duck, or a hundred duck-sized horses? Microservices are smaller and have numerous interconnections and interdependencies. As a result, it requires a firm architectural overview from beginning to ensure clarity on how they work with one another
+								Complexity: As the ancient proverb goes - Would you rather fight one horse-sized duck, or a hundred duck-sized horses? Microservices are smaller and have numerous interconnections and interdependencies. As a result, it requires a firm architectural overview from the beginning to ensure clarity on how they work with one another
 							</li>
 							<li>
-								Sizing: Microservices need to be able to handle tasks by themselves but not contain so much logic they become bottlenecks. If they are made too small then it increases the burden on dependency mapping and maintenance
+								Sizing: Microservices need to be able to handle tasks by themselves but not contain so much logic that they become bottlenecks. If they are made too small then it increases the burden on dependency mapping and maintenance
 							</li>
 						</ul>
 
@@ -260,7 +263,7 @@
 					<div class="pages-content pages-content-end">
 						<h3><strong>Microservices vs 'Monoliths'</strong></h3>
 						<p>
-							Microservices go hand-in-hand with an Agile and DevOps orientated organisations. Microservices can be leveraged to great effect for building and maintaining efficient and effective Enterprise applications as they can be created, updated, and deployed with little or no impact to other Microservices.
+							Microservices go hand-in-hand with Agile and DevOps orientated organisations. Microservices can be leveraged to great effect for building and maintaining efficient and effective Enterprise applications as they can be created, updated, and deployed with little or no impact to other Microservices.
 						</p>
 						<p>
 							It is not right to suggest organisations should stop working on Monolithic applications and re-architect them into Microservices, as both approaches provide their own benefits and disadvantages. Also, Monolithic applications might require significant effort, both time and cost, to re-architect and provide little value. 
@@ -285,7 +288,7 @@
 
 			<div class="pages-sauce">
 				<div class="text-center">
-					<div class="pages-sauce-content-one">
+					<div class="pages-sauce-content-one pages-content">
 					<h3 class="sauce-heading">Sources</h3>
 					<div class="sauce-heading-underline"></div>
 						<div class="pages-content-sauce">
