@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136448057-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-136448057-2');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>What are Microservices? | DevOps Platform</title>
+	<link rel="shortcut icon" href="../img/DP-favicon.png">
+	<link rel="stylesheet" href="../bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2pages.css">
+	<link rel="stylesheet" href="../css/fixed.css">
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<div id="home">
+		<nav class="navbar navbar-expand-md bg-purple fixed-top">
+			<a class="navbar-brand" href="../index"><img src="../img/DPW6bold.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="pages navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../about">About</a>
+					</li>	
+				</ul>													
+			</div>
+		</nav>	
+	</div>	
+
+<div class="pages-wrapper">
+
+	<div class="pages-content pages-content-top">
+
+		<p style="text-align:left;">
+							<a href="../index">Home</a>
+							>
+							<a href="../blog">Blog</a>
+		    <span style="float:right;">
+		        20 March 2020
+		    </span>
+		</p>
+
+		<div class="col-12">	
+			<h3 class="pages-heading">Microservices</h3>
+			<div class="pages-heading-underline"></div>
+		</div>
+		<br>
+	</div> 
+
+			<div class="pages-content pages-content-image pages-content-image-header">
+				<img src="../img/microservices.png">
+			</div>
+
+			<div id="features" class="offset"> 
+
+					<div class="pages-content pages-content-one">
+						<p>
+							Microservices are an approach to developing software applications which aims to segregate different functionalities into single-function independent services. Microservices perform standalone activities which typically communicate with one another through API's (Application Programming Interfaces). This has grown in popularity through Agile and DevOps (more on these can be found <a href="DevOps" target="_blank">here</a>) as Microservices can enable faster, more efficient software delivery.
+						</p>
+						<p>
+							To provide a <i>Platform of Understanding</i> on Microservices this blog will first explain the traditional approach to developing software before moving onto Microservices, using an example throughout to highlight how these approaches differ and the benefits and disadvantages of each. The blog will end with a view on which approach is better suited for organisations. 
+						</p>
+					</div>
+					<div class="pages-content pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Side note: Application Programming Interface (API)</strong></h4>
+							<p>	
+								An API at its core is a mechanism which enables applications to communicate and interact with other applications, sending specific information, or actioning simple commands.
+							</p>
+							<p>
+								A way to visualise this is by looking at how phones and Smart Watches (not the ones which have their own SIM) work together. When a text is received by the phone it is sent to the Smart Watch where it can be read, and replies can be sent via the watch through the phone. The watch is not receiving or sending the text by itself, however the API's in both the phone and watch are able to communicate through the sharing of information and commands. Although there is a lot more going on that what was just discussed, this example gives an understanding of how API's work together.
+							</p>
+						</div>
+					</div>
+
+					<div class="pages-content pages-content-one">
+						<h3><strong>'Monoliths' - Traditional approach</strong></h3>
+						<p>
+							'Monolith' is a name provided to how software services/applications have traditionally, and still continue to be, developed. This is where an entire service is built as a single block of code (a code base), which contains all the functions and business activities the application performs.
+						</p>
+
+						<div class="pages-content-gif">
+							<img src="../gif/Big-Deal.gif">
+						</div>
+
+						<p>
+							Containing everything needed for a service within the same code base can be seen as a logical approach as it should make it easier to manage. However, this approach can quickly become problematic.
+							<br><br>
+							To better explain how a Monolith is formed and the issues that are commonly encountered the below example will be used, with a rather unimaginatively named, Company A.
+						</p>
+						<br>
+						<h4><strong>Example - Part 1: Monolith - Single application service</strong></h4>
+						<p>
+							 
+						</p>
+						<p>
+							Company A wants to create a 'Welcome Email' service which obtains a new users contact information from a database, forms a preset standardised welcome email, and sends it to them. A simple and effective service as shown below.
+						</p>
+						<div class="pages-content-image">
+							<img src="../img/Microservices-Monolith-Single-Function-DevOpsPlatform.jpg">
+						</div>	
+						<br>					
+						<h4><strong>Example - Part 2: Monolith - Multiple application service</strong></h4>
+						<p>
+							Company A then want to also create:
+							<ul>
+								<li>
+									'Promotion Email' service to send promotional emails to its customers
+								</li>
+								<li>
+									'Cancel Email' service to send a confirmation email when a customers request to cancel their subscription
+								</li>
+							</ul>
+						Both of these additional services would contain much of the same functionality as the ‘Welcome Email’ service as both would require retrieving customer contact details from the database and sending a standardised email to the customer.   In addition, these two new services would also need to retrieve information on how long the user has been a customer to include in the standardised emails. 
+<!-- 								<li>
+									Both services will include most of the functionality in the 'Welcome Email' service
+								</li>
+								<li>
+									Both services will obtain information on how long the user has been a customer and include that in their emails
+								</li>
+							</ul> -->
+						</p>
+				
+
+						<p>
+							As the 'Welcome Email' service was created under one single code base the new 'Promotion Email' and 'Cancel Email' services have 2 options; either duplicate the ‘Welcome Email’ service code and adapt it slightly to achieve the service requirements or the alternative is to combine all three email services together in the one code base. 
+							<br>
+							If they decided to avoid the duplication of code and opt for the second option outlined above, without tailoring it would result in a Welcome Email being sent alongside a Cancel or Promotion email. This is due to the 'Welcome Email' code being contained in one code base which stops certain elements of the code being used in isolation.
+						</p>
+						<p>
+							The decision is made to avoid duplication of effort and code by combing all three into a 'Email' service. So now the 'Email' service contains:
+							<ul>
+								<li>
+									'Welcome Email' service
+								</li>
+								<li>
+									'Promotion Email' service
+								</li>
+    							<li>
+    								'Cancel Email' service
+    							</li>
+							</ul>
+						</p>
+						<p>
+							This approach now means that additional decision points need to be added into the code to ensure that the correct email is sent to the correct customer. The 'Email' service now looks like the below diagram.
+						</p>
+
+						<div class="pages-content-image">
+							<img src="../img/Microservices-Monolith-Multi-Function-DevOpsPlatform.jpg">
+						</div>	
+					</div>
+
+					<div class="pages-content pages-content-end">
+						<h4><strong>Pitfalls of traditional 'Monolith' approach</strong></h4>
+						<p>
+							Containing all the code for multiple services under one code base provides the benefit of reducing duplication of code. However, as more and more services and functionalities are added under one code base the more complicated it gets to manage. Any alteration to any of the services included in the code base need to ensure there is no detrimental impact to any of the other services included in the code base. This results in changes taking longer than necessary as significant amounts of testing needs to be carried out for any change, big or small.
+						</p>
+						<p>
+							Additionally, the more code that exists in one code base will result in a decrease in its overall performance, as code needs to be added to ensure that when one service is called it doesn’t accidentally result in another service in the code base being called.
+						</p>
+						<p>
+							In terms of the Company A example, the performance of the simple 'Welcome Email' service will now be considerably worse as additional steps have been added into the code base to ensure not all 3 emails are sent each time the Monolithic 'Email' service is called.
+						</p>
+						<div class="pages-content-gif">
+							<img src="../gif/taking-so-long.gif">
+						</div>
+					</div>
+
+					<div class="pages-content pages-content-one">					
+						<h3><strong>Microservices</strong></h3>
+						<p>
+							Microservices, or Microservice Architecture aims to overcome the challenges of Monolithic services by taking the complete opposite approach to code management. The aim is to split code into segregated, independent services, which perform isolated actions in their simplest form. 
+						</p>
+
+						<p>
+							3 key characteristics of Microservices:    
+							<ul>
+								<li>
+									Can be written in different programming languages
+								</li>
+								<li>
+									Highly maintainable and testable (can be created, updated, or deployed without impacting other Microservices)
+								</li>
+								<li>
+									Each performs its own function, based around business capabilities
+								</li>
+							</ul>
+						</p>
+
+						<p>
+							As Microservices can be written in different languages and still work with each other they enable a completely different way of operating than under the traditional approach. 
+						</p>
+						<p>
+							Traditionally, teams will make updates to 'Monoliths', sometimes simultaneously, adding desired features. This can be slow and painful as updates to the code might not follow the same coding standards which can result in nonsensical code descriptions or varying quality, amongst other things. This is made worse when another teams code needs to be fixed due to it causing an update not to work.
+						</p>
+
+						<div class="pages-content-gif">
+							<img src="../gif/what-you-do.gif">
+						</div>
+
+						<p>
+							Whereas Microservices can be split into groups of similar functionality and ownership can be maintained by small teams. This ensures consistency within the grouped Microservices as ownership is relatively static and any updates are fully understood before implementation, and are implemented with the same code quality, which helps to avoid any unnecessary or detrimental code being added.
+						</p>						
+
+						<h4><strong>Example - Part 3: Monolith to Microservices</strong></h4>
+
+						<p>
+							Company A decided to take the Microservices approach instead of the Monolithic approach to developing their applications. As a result, they have broken down the 'Email' services into small pieces of functionality and developed as seperate Microservices. Using this approach the 'Welcome', 'Promotion' and 'Cancel' email services now look like the below diagram.
+						</p>
+
+						<div class="pages-content-image">
+							<img src="../img/Microservices-Architecture-DevOpsPlatform.jpg">
+						</div>						
+
+						<p>
+							By splitting the services into individual functionalities within their own code bases it has removed the necessity to combine code to utilise desired functionalities. This now enables all Email services to remove unnecessary actions and decision points whilst still utilising shared functionality, increasing their performance and making them easier to manage.
+						</p>
+					</div>
+
+					
+
+					<div class="pages-content pages-content-one">
+						<h3><strong>So, Microservices solve everything right?</strong></h3>
+
+						<p>
+							Well, not exactly. It's not realistic to claim Microservices are a perfect approach to creating services as they too come with their own complications that if not handled can be extremely problematic. 2 key areas are:
+						</p>
+
+						<ul>
+							<li>
+								Complexity: As the ancient proverb goes - Would you rather fight one horse-sized duck, or a hundred duck-sized horses? Microservices are smaller and have numerous interconnections and interdependencies. As a result, it requires a firm architectural overview from the beginning to ensure clarity on how they work with one another
+							</li>
+							<li>
+								Sizing: Microservices need to be able to handle tasks by themselves but not contain so much logic that they become bottlenecks. If they are made too small then it increases the burden on dependency mapping and maintenance
+							</li>
+						</ul>
+
+						<div class="pages-content-gif">
+						<!-- makes the image smaller than the narrow already -->
+							<img src="../gif/tiny.gif">
+						</div>
+					</div>
+
+					<div class="pages-content pages-content-end">
+						<h3><strong>Microservices vs 'Monoliths'</strong></h3>
+						<p>
+							Microservices go hand-in-hand with Agile and DevOps orientated organisations. Microservices can be leveraged to great effect for building and maintaining efficient and effective Enterprise applications as they can be created, updated, and deployed with little or no impact to other Microservices.
+						</p>
+						<p>
+							It is not right to suggest organisations should stop working on Monolithic applications and re-architect them into Microservices, as both approaches provide their own benefits and disadvantages. Also, Monolithic applications might require significant effort, both time and cost, to re-architect and provide little value. 
+						</p>
+						<p>
+							However, as organisations increase their DevOps maturity Microservices should be used for new applications and functions to capitalise on the benefits they can bring. Additionally, the rising capability of new tools and technologies can be used to reduce or overcome the complexities of Microservices, helping to further their benefits.
+						</p>
+						<p>
+							Companies that have been able to harness the benefits of Microservices in their DevOps maturity include: Amazon, Netflix & PayPal and as a result they have been able to accomplish delivery capabilities that would have been seen as impossible a few years ago, such as being able to deploy new changes into Production hundreds and even thousands of times a day.
+						</p>
+						<br>
+						<p>
+							<i>
+							If you are interested in finding out more on DevOps, you can view the next blog post on <a href="containers" target="_blank">Containers here</a>, or all available <a href="../blog" target="_blank">Blogs here</a>.
+							</i>
+						</p>
+					</div>
+
+			</div> <!-- End Features Section -->
+		</div>
+	</div> 	<!-- End pages-narrow Section -->
+
+			<div class="pages-sauce">
+				<div class="text-center">
+					<div class="pages-sauce-content-one pages-content">
+					<h3 class="sauce-heading">Sources</h3>
+					<div class="sauce-heading-underline"></div>
+						<div class="pages-content-sauce">
+							<p>
+								Hopefully this blog has provided a <i>Platform of Understanding</i> on Microservices, and the benefits they can bring. However, if you want to find out more on the different areas mentioned, below are some links that were used to ensure that the information provided in this blog was accurate, relevant and reliable.
+							</p>
+							<br>
+							<p>
+								<h5>
+									<a class="sauce-link" target="_blank" href="https://opensource.com/resources/what-are-microservices">An introduction to microservices</a>
+								<br><br>									
+									<a class="sauce-link" target="_blank" href="	https://blog.newrelic.com/technology/microservices-what-they-are-why-to-use-them/">Microservices What they are and why to use them</a>
+								<br><br>
+									<a class="sauce-link" target="_blank" href="	https://appinventiv.com/blog/microservices-vs-monolithic-architecture/">Microservices vs Monolithic Architecture</a>
+								<br><br>																
+									<a class="sauce-link" target="_blank" href="https://smartbear.com/solutions/microservices/">What are Microservices</a>
+								<br><br>
+									<a class="sauce-link" target="_blank" href="https://www.mulesoft.com/resources/api/what-is-an-api">What is an API?</a>			
+								</h5>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div> <!-- End pages-wrapper Section -->
+
+
+
+
+<!--- Script Source Files -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script> -->
+<!--- End of Script Source Files -->
+
+
+</body>
+</html>
