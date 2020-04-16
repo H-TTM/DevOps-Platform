@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-136448057-2"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-136448057-2');
+	</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cloud Services - IaaS, CaaS, PaaS, FaaS, SaaS | DevOps Platform</title>
+	<link rel="shortcut icon" href="../img/DP-favicon.png">
+	<link rel="stylesheet" href="../bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style2pages.css">
+	<link rel="stylesheet" href="../css/fixed.css">
+</head>
+
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+	<div id="home">
+		<nav class="navbar navbar-expand-md bg-purple fixed-top">
+			<a class="navbar-brand" href="../index"><img src="../img/DPW6bold.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="pages navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="../index">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../about">About</a>
+					</li>	
+				</ul>													
+			</div>
+		</nav>	
+	</div>	
+
+<div class="pages-wrapper">
+	
+	<div class="pages-content pages-content-top">
+
+		<p style="text-align:left;">
+							<a href="../index">Home</a>
+							>
+							<a href="../blog">Blog</a>
+		    <span style="float:right;">
+		        01 May 2020
+		    </span>
+		</p>
+
+		<div class="col-12">	
+			<h3 class="pages-heading">Cloud services - <br> IaaS, CaaS, PaaS, FaaS, SaaS</h3>
+			<div class="pages-heading-underline"></div>
+		</div>
+		<br>
+	</div> 
+
+			<div class="pages-content pages-content-image pages-content-image-header">
+				<img src="../img/clouds.jpg">
+			</div>
+
+
+			<div id="features" class="offset"> 
+				<div class="pages-content pages-content-one">
+					<p>
+						Cloud computing refers to a network of computers and servers which provide access to computing services over the internet such as; servers, storage, databases, networking, software, and analytics. Cloud computing removes the necessity of physical ownership of IT infrastructure which can dramatically lower the cost of IT operations as in most cases the customer only pays for the Cloud services they use. Cloud computing also provides greater flexibility and adaptability as infrastructure can be quickly scaled to meet demand.
+					</p>
+					<p>
+						Cloud computing can be traced back to the 1960’s and 1970’s however its viability was extremely limited due to the available technology and infrastructure. The Cloud computing we know of today began its massive surge in popularity in 2002 when Amazon released its Cloud offering Amazon Web Services (AWS). Since then Cloud computing services have expanded to form a wide range of offerings named in seemingly particularly confusing acronyms, with currently the most common including; IaaS, CaaS, PaaS, FaaS and SaaS. 
+					</p>
+					<p>
+						To provide a <i>Platform of Understanding</i> on Cloud services this blog will start with an overview on the different types of Cloud services. This will be followed by a ‘Burger as a Service” example to make the differences between the Cloud services more digestible (pun absolutely intended). 
+					</p>
+				</div>
+
+				<div class="pages-content pages-content-one">					
+					<h3><strong>IaaS, CaaS, PaaS, FaaS, SaaS</strong></h3>
+					<p>
+						The below diagram is a useful place to start when understanding the different types of Cloud services as it shows how the responsibility between supplier and customer differs by each Cloud service.					
+					</p>
+
+					<div class="pages-content-image">
+						<img src="../img/Cloud-services.jpg">
+					</div>	
+
+					<p>
+						<h4>
+							On-Premises
+						</h4>
+						<p>
+							On-premises is the traditional approach to managing IT services. This approach does not use any Cloud services and as a result enables the customer to have absolute control on their IT operations at the consequence of owning the all the responsibility and cost. 
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							IaaS
+						</h4>
+						<p>
+							Infrastructure as a Service is where suppliers provide preconfigured infrastructure (servers) and are responsible for its maintenance and ensuring its operational effectiveness. The customer is responsible for provisioning and managing all fundamental computing resources (including Operating System and Software) so they can design, build, deploy and run their applications. 
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							CaaS
+						</h4>
+						<p>
+							Containers as a Service is one of the more recent Cloud service acronyms and is a form of Container based virtualisation. This is suited for organisations which are developing their software as Containers (more on Containers can be found here). CaaS results in the supplier providing the infrastructure, Operating System, Container Daemon, Orchestration and other underlying compute resources. CaaS provides customer with a relatively restriction free programming platform as customers have the operational responsibility to define their Containers; what programming languages, runtime, tools, and frameworks are used. 
+						</p>
+					</p>	
+
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Side note: Runtime</strong></h4>
+							<p>	
+								Most programming languages have their own runtime (also known as runtime system). A runtime supports the execution of applications by carrying out a range of background functions specific to the programming language the application is written in. Examples of runtime functions are; translating the programming language into machine code, debugging, resource management and code optimisation.
+							</p>
+						</div>
+					</div>
+
+					<p>
+						<h4>
+							PaaS
+						</h4>
+						<p>
+							Platform as a Service is one the most popular Cloud service platforms for application development. Suppliers provide the infrastructure, Operating Systems, Software, and manage the deployment and hosting of applications. PaaS customers use the suppliers predefined Software to design and build their applications and maintain them once live. This removes the operational and financial cost of the Infrastructure and Software from the customer and ensures that all the tools the customer uses are compatible with the Platform provided. As a result of the supplier owning most of the responsibility customers will typically have restrictions on what programming languages, frameworks and tools can use be used.  
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							FaaS
+						</h4>
+						<p>
+							Function as a Service enables the management of application functions whilst removing the need for customers to manage the Infrastructure, Operating System or Applications. Functions are small pieces of code that carry out singular actions, a level smaller than Microservices (more on Microservices can be found here). Examples of functions include read, write, update, and delete. Customers only pay for the execution of their code, if the code is never called then there is no financial burden on the customer. 
+						</p>
+					</p>
+
+					<div class="pages-side-note-wrapper">
+						<div class="pages-side-note">
+							<h4><strong>Side note: Serverless</strong></h4>
+							<p>	
+								Serverless computing (Serverless) is an event driven Cloud services where the customer only pays each time their code is executed (also known as FaaS). The term Serverless is due to the customer only needing the write the code. Where the code is stored and how it is executed is handled by the Supplier. Also, Serverless scaling is done automatically, although other Cloud services can provide unlimited scalability the customer will own certain actions to facilitate this, such as programming within applications or contacting the supplier. Whereas, Serverless will scale without any responsibility on the customer.
+							</p>
+						</div>
+					</div>
+
+					<p>
+						<h4>
+							SaaS
+						</h4>
+						<p>
+							Software as a Service removes the majority of responsibility away from customers. Suppliers provide the infrastructure, software, applications and functions over the internet. Customers normally have a limited selection of applications and functions to utilise. SaaS include a wide of well-known and commonly used services such as; Dropbox, Gmail, and Outlook.
+						</p>
+					</p>
+
+					<p>
+						<h3>
+							Costing methods
+						</h3>
+						
+						<p>
+							Costing methods for these Cloud services can vary depending on a wide range of variables such as; type of contract, scale of use, supplier relationship. However, there are two common costing methods – Fixed price per or Pay-as-you-go. These are the same as mobile tariffs where the customer can pay a fixed rate per month with certain limitations to ensure it remains profitable for the supplier or the customer pays for what they use which increases their flexibility at the risk of having variable costs.
+						</p>
+					</p>
+
+				</div>
+
+
+				<div class="pages-content pages-content-one">	
+					<h3><strong>Burger as a Service</strong></h3>
+					<p>
+						The Cloud services and their differences are a lot to absorb especially if you are not dealing directly with them in your day-to-day. To make things a bit easier to understand (hopefully) a more relatable example below depicts how the responsibility between a customer and supplier changes depending on how the customer wants their burger to be made. These differences run in parallel to those between the different Cloud services.					
+					</p>
+
+					<div class="pages-content-image">
+						<img src="../img/Burger-as-a-Service.jpg">
+					</div>	
+
+					<p>
+						<h4>
+							Make at home
+						</h4>
+						<p>
+							You cook in your own home so you are limited by only what you can afford. You pay for what its cooked on, how its cooked, what its made of etc. As long as you own the necessary items you could make a 50lb burger and grill it on a BBQ, bake it in an oven, or fry it in a deep fat frier. You choose what drinks to have with it and if you invite any friends round to join you.
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							Public BBQ
+						</h4>
+						<p>
+							You make and cook the burger using a public BBQ. The council owns and is responsible for the maintenance of the public BBQ, you are responsible for bringing the burger, the fuel to cook the burger such as wood, coal or gas, and your drinks.
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							Friends house
+						</h4>
+						<p>
+							You are invited to your friends house, you have to bring the food and drink but they will cook it for you on their cooking facilities.
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							Takeaway
+						</h4>
+						<p>
+							You grab a takeaway burger from a restaurant, they are responsible for making it, you are responsible for selecting the type of burger from their preselected offerings, purchasing the drinks, and who you eat with.
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							Restaurant
+						</h4>
+						<p>
+							You go to a burger restaurant for a sit-down meal. You are responsible for inviting people and ordering your burger and drinks from the menu. The restaurant is responsible for making and delivering your food and drink.
+						</p>
+					</p>
+
+					<p>
+						<h4>
+							Party
+						</h4>
+						<p>
+							You are invited to your friends party, they are providing all the food, drink and guests. You are responsible for aking conversation with other guests.
+						</p>
+					</p>																				
+				</div>
+
+				<div class="pages-content pages-content-end">	
+					<h3><strong>Are we cooking on GaaS?</strong></h3>
+				
+				<p>
+					The responsibility and relationship between the customer and supplier vary by each Cloud service and in doing so each Cloud service provides different benefits and disadvantages. 
+				</p>
+				<p>	
+					As shown through the Burger as a Service example if you have the time, money and inclination to own everything needed to make a burger you can make it and cook it just as you like. However, if you want less hassle and less overall cost then going to a restaurant where someone else makes your burger and drinks is a more preferable choice. 
+				</p>
+
+<!-- 				<div class="pages-content-gif">
+							<img src="../gif/burger.gif">
+				</div> -->
+
+				<p>
+					When choosing what Cloud service is appropriate the same decisions will need to be made in order for the customer achieve  their desired outcomes in the most time and cost efficient way possible.
+				</p>
+			</div>
+
+	<div class="pages-sauce">
+		<div class="text-center">
+			<div class="pages-sauce-content-one pages-content">
+			<h3 class="sauce-heading">Sources</h3>
+			<div class="sauce-heading-underline"></div>
+				<div class="pages-content pages-content-sauce">
+					<p>
+						Hopefully this blog has provided a <i>Platform of Understanding</i> on Cloud Services and the benefits they can bring. However, if you want to find out more on the different areas mentioned, below are some links that were used to ensure that the information provided in this blog was accurate, relevant and reliable.
+					</p>
+					<br>
+					<p>
+						<h5>
+							<a class="sauce-link" target="_blank" href="https://www.zdnet.com/article/cloudy-concepts-iaas-paas-saas-maas-caas-xaas/">Cloudy Concepts: IaaS, PaaS, SaaS, MaaS, CaaS & XaaS</a>
+						<br><br>									
+							<a class="sauce-link" target="_blank" href="https://rajeevkuruganti.com/cloud-iaas-paas-saas-and-more/">Cloud – IaaS, PaaS & SaaS!</a>
+						<br><br>
+							<a class="sauce-link" target="_blank" href="https://www.eukhost.com/blog/webhosting/how-to-tell-one-aas-from-another-iaas-paas-saas-caas-and-maas/">How to Tell One aaS From Another: IaaS, PaaS, SaaS, CaaS and MaaS</a>		
+						<br><br>
+							<a class="sauce-link" target="_blank" href="https://www.xtivia.com/compare-faas-paas-saas/">Serverless and PaaS, FaaS, SaaS: Same, Similar or Not Even Close?</a>
+						<br>																
+						</h5>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
