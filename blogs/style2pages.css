@@ -13,6 +13,14 @@ p {
 }
 
 
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  /*margin-top: -2rem;*/
+    /*this makes it so when you click on a section the banner does not overlap with it*/
+}
+
     /*NAVIGATION SECTION - COPIED FROM PRE-MADE AND EDITED */
 .navbar {
   padding: .7rem 1rem;
@@ -105,7 +113,13 @@ h3.pages-heading {
   margin: 0 auto 0rem;
 }
 
-
+.pages-point {
+    padding-left: 1.2rem;
+/*    margin-top: 3rem;
+    font-style: italic;
+    font-size: 87%;*/
+    max-width: 90%;
+}
 /******BODY SECTION******/
 
 .pages-wrapper {
