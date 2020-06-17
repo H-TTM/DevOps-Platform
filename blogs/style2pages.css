@@ -249,6 +249,7 @@ li {
   height: auto;
 }
 
+
 .pages-content-image-header img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 45%;
@@ -256,10 +257,11 @@ li {
 
 @media screen and (max-width: 900px) {
   div.pages-content-image img {
-   max-width: 70%;
+   max-width: 90%;
    height: auto;
   }
 }
+
 
 @media screen and (max-width: 600px) {
   div.pages-content-image img {
