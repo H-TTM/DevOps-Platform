@@ -5,26 +5,23 @@
 
 
 .bg-purple {
-   background-color: #2b073b;
-}
-
-.navbar-brand img {
-  height: 2.5rem;
+   background-color: #31135e;
 }
 
 .pages-heading-underline {
     width: 3rem;
     height: .2rem;
-    background-color: #2b073b;
+    background-color: #31135e;
     margin: 0 auto 0rem;
 }
 
+
 a {
-  color: #2b073b;
+  color: #31135e;
 }
 
 a:hover {
-    color: #2b073b;
+    color: #31135e;
     text-decoration: underline;
 }
 
@@ -35,9 +32,14 @@ a:hover {
     /* max-height: 10rem; */
 }
 
+.bg-purple {
+   background-color: #31135e;
+}
 
-
-
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
 
 
 
@@ -81,7 +83,7 @@ a:hover {
 
 
 .about-header {
-  color: #2b073b;
+  color: #31135e;
   position: relative;
   padding: 4.3rem 0 3rem 0;
   margin: 0 auto;
@@ -158,9 +160,7 @@ a:hover {
 
 
 
-.navbar.always-solid {
-  background: rgba(0, 0, 0, 0.7)!important;
-}
+
 #title-heading {
   /*background: url('img/title-background.png') no-repeat;*/
   background-color: rgba(0, 0, 0, 0.1)!important;
@@ -200,7 +200,13 @@ h3.title-heading {
 
 body {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  /*font-family: 'Lato', sans-serif;*/
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+
+
+
   color: #505962;
 }
 
@@ -214,6 +220,10 @@ body {
 
 /*============= NAVIGATION =============*/
 
+/*.navbar.always-solid {
+  background: rgba(0, 0, 0, 0.7)!important;
+}*/
+
 .navbar {
   padding: .7rem 1rem;
   text-transform: uppercase;
@@ -222,13 +232,38 @@ body {
   letter-spacing: .1rem;
   transition: background-color .5s ease 0s;
 }
+
+.navbar-brand img {
+  height: 3.2rem;
+}
+
+.navbar-header {
+  text-transform: lowercase;
+}
+
+.navbar-header a {
+  color: #ffffff;
+}
+
+.navbar-header a:hover {
+  color: #8a3ffc;
+}
+
+
+.navbar-brand {
+  padding: 0rem!important;
+  margin: 0 1rem;
+}
 /*.navbar-brand img {
   height: 2rem;
 }*/
-.svg-inline--fa.fa-w-14 {
-  color: white;
-  font-size: 1.6rem;
+
+
+.navbar-nav {
+  text-align: center;
 }
+
+
 .navbar-nav li {
   padding-right: .8rem;
 }
@@ -238,7 +273,7 @@ body {
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-  color: white;
+  color: #8a3ffc;
 }
 .navbar .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -247,53 +282,270 @@ body {
 /*This enabled me to remove dependcy from navbar-dark and 
 copied the hamburger sign from the scss*/
 
-.navbar .navbar-toggler {
+/*.navbar .navbar-toggler {
   border-color: rgb(255,255,255,0.7);
-}
+}*/
 /**This enabled me to remove dependcy from navbar-dark and 
 copied the hamburger sign from the scss*/
 
-.bg-purple {
-   background-color: #2b073b;
-}
+
 
 .navbar.solid {
   background: rgba(0, 0, 0, 0.7)!important;
   transition: background-color 1s ease 0s;
 }
 
-/*============= LANDING PAGE =============*/
-.home-wrap {
-  clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.home-inner {
-  background-image: url(img/purplecity.jpg);
-  position: fixed;
-  display: table;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
-  -webkit-transform: translateZ(0);
-          transform: translateZ(0);
-  will-change: transform;
+
+
+/**************** NAVBAR HAMBURGER SECTION*****************/
+
+/*This stops a white outline appearing when you click on the hamburger menu*/
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
-.caption {
+
+
+/*https://mdbootstrap.com/docs/jquery/navigation/hamburger-menu/*/
+
+
+navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Icon 1 */
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon1 span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon1 span {
+background: #e65100;
+}
+
+.animated-icon2 span {
+background: #e3f2fd;
+}
+
+.animated-icon3 span {
+background: #f3e5f5;
+}
+
+.animated-icon1 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon1 span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon1.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon1.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon1.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
+
+/* Icon 3*/
+
+
+/* Icon 4 */
+
+.animated-icon3 span:nth-child(1) {
+top: 0px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(2) {
+top: 10px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon3 span:nth-child(3) {
+top: 20px;
+-webkit-transform-origin: left center;
+-moz-transform-origin: left center;
+-o-transform-origin: left center;
+transform-origin: left center;
+}
+
+.animated-icon3.open span:nth-child(1) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+top: 0px;
+left: 8px;
+}
+
+.animated-icon3.open span:nth-child(2) {
+width: 0%;
+opacity: 0;
+}
+
+.animated-icon3.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+top: 21px;
+left: 8px;
+}
+
+
+/*****************END OF NAVBAR HAMBURGER SECTION*****************/
+
+
+
+/*****************LANDING SECTION*****************/
+
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+  background-image: url(img/DP_landing_page_v1-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+  /*background-attachment: fixed;*/
+}
+
+
+@media screen and (max-width: 780px) {
+  div.landing {
+   background-image: url(img/DP_landing_page_v1-2-843w-px.jpg);
+  }
+}
+
+.btn-landing {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+
+.button-landing {
+  background-color: transparent;
+  border: solid white 2px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  /*opacity: 0.6;*/
+  transition: .5s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.button-landing:hover {
+/*  background-color: white;
+  color: black;*/
+  background-color: #379683;
+  color: white;
+  border-color: #31135e;
+}
+
+.button-content {
+  background-color: transparent;
+  border: solid #379683 2px;
+  color: #379683;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+  /*opacity: 0.6;*/
+  transition: .5s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.button-content:hover {
+  background-color: #379683;
+  color: white;
+}
+
+.button-div {
+  height: auto;
+}
+
+.landing-caption {
   width: 100%;
   max-width: 100%;
   position: absolute;
   top: 38%;
   z-index: 1;
 }
-.caption h1 {
+
+.landing-caption h1 {
   color: white;
   font-size: 4.5rem;
   /*text-transform: uppercase;*/
@@ -302,7 +554,7 @@ copied the hamburger sign from the scss*/
   text-shadow: .1rem .1rem .8rem black;
   padding-bottom: 1rem;
 }
-.caption h3 {
+.landing-caption h3 {
   color: white;
   font-size: 2.5rem;
   /*text-transform: uppercase;*/
@@ -311,44 +563,8 @@ copied the hamburger sign from the scss*/
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 650px) {
-   div.caption h1 {;
-   margin: 0 auto;
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 2rem;
-   max-width: 80%;
-  }
-}
 
-@media screen and (max-width: 650px) {
-   div.caption h3 {;
-    text-align: center;
-    font-size: 1.6rem;
-   line-height: 180%;
-   max-width: 80%;
-   margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 450px) {
-   div.caption h1 {;
-   margin: 0 auto;
-   text-align: center;
-   font-size: 2rem;
-   padding-bottom: 1rem;
-   max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-   div.caption h3 {;
-   font-size: 1.3rem;
-   line-height: 180%;
-   max-width: 80%;
-   margin: 0 auto;
-  }
-}
+/*****************LANDING SECTION END*****************/
 
 
 .btn-lg {
@@ -359,16 +575,6 @@ copied the hamburger sign from the scss*/
   font-weight: 400;
   text-transform: uppercase;
   display: inline-block!important;
-}
-
-/*TAKEN FROM FIXED.CSS -START HERE*/
-/*--- Fixed Landing Page Section --*/
-.landing {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: table;
-  z-index: -1;
 }
 
 
@@ -406,8 +612,8 @@ copied the hamburger sign from the scss*/
 
 
 .main-body {
-  background-color: #f0f2f4;
-  color: #2b073b;
+  background-color: #ffffff;
+  color: #31135e;
   padding-bottom: 1rem;
 /*    background-color: #2b073b;
     color: white;*/
@@ -454,8 +660,8 @@ copied the hamburger sign from the scss*/
 .button1 {
   border-radius: 8px;
   /*background-color: #f0f2f4; */
-  border: 2px solid #2b073b;
-  background-color: #2b073b; 
+  border: 2px solid #31135e;
+  background-color: #31135e; 
   /*border: 2px solid #f0f2f4;*/
   color: #f0f2f4;
 }
@@ -464,8 +670,8 @@ copied the hamburger sign from the scss*/
   border-radius: 8px;
   /*background-color: #2b073b;*/
   background-color: #f0f2f4;  
-  border: 2px solid #2b073b;
-  color: #2b073b;
+  border: 2px solid #31135e;
+  color: #31135e;
   /*color: #f0f2f4;*/
   text-decoration: underline;
 }
@@ -524,7 +730,7 @@ copied the hamburger sign from the scss*/
 
 
 .pages-content {
-  max-width: 80%;
+  max-width: 75%;
   margin: 0 auto;
   word-spacing: 1px;
   line-height: 160%;
@@ -533,7 +739,7 @@ copied the hamburger sign from the scss*/
 
 .pages-content-index {
   padding-top: 2.7rem;
-  text-align: center;
+  text-align: left;
 }
 /*
 .pages-content-invert{
@@ -545,8 +751,9 @@ copied the hamburger sign from the scss*/
 .blog-image-box img{
   float: left;
   /*max-height: 335px;*/
-  max-width:33%;
+  max-width:50%;
   overflow: auto;
+  /*min-width: 500px;*/
 }
 
 
@@ -555,13 +762,13 @@ copied the hamburger sign from the scss*/
 .blog-column {
   background-color: white;
   padding: 0rem!important;
-  border-top: .2rem solid #2b073b;
+  border-top: .2rem solid #31135e;
   box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
   transition: transform .7s ease;
   overflow: hidden;
   position: relative;
   margin: 2rem 0rem;
-  color: #2b073b;
+  color: #31135e;
   max-height: 335px;
   text-align: center;
 }
@@ -685,7 +892,7 @@ copied the hamburger sign from the scss*/
   margin-bottom: 0;
   border-radius: 0;
   padding: 6rem 0 4rem;
-  background-color: #f0f2f4;
+  background-color: #f6f8fa;
 }
 
 
@@ -757,7 +964,7 @@ blockquote .svg-inline--fa {
 
 .blog-hr {
     /*this is for the horizontal line*/
-    border-top: .05rem solid #2b073b;
+    border-top: .05rem solid #31135e;
       /*1 pixel width, solid colour*/
 }
 
@@ -782,13 +989,14 @@ blockquote .svg-inline--fa {
 .blog-column {
   background-color: white;
   padding: 0rem!important;
-  border-top: .2rem solid #2b073b;
-  box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.075);
+  border-top: .2rem solid #31135e;
+  box-shadow: 0 0 0 1px rgba(53,72,91,.1),0 3px 2px rgba(0,0,0,.04),0 7px 5px rgba(0,0,0,.02),0 13px 10px rgba(0,0,0,.02),0 22px 17px rgba(0,0,0,.02)!important;
   transition: transform .7s ease;
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
   margin: 2rem 0rem;
-  color: #2b073b;
+  color: #31135e;
 }
 
 /*.blog-column p {
@@ -804,7 +1012,7 @@ blockquote .svg-inline--fa {
   margin: 0 auto;
   /*padding-top: 2rem;*/
   padding-top: 1.5rem;
-  color: #2b073b;
+  color: #31135e;
 }
 
 .blog-col-link-picture {
